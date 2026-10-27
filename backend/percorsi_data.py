@@ -1,0 +1,176 @@
+# Catalogo locale dei 12 percorsi (fonte temporanea fino al collegamento Shopify - Fase 4).
+# Prezzi in CHF dalla sezione 7.2 del brief: da non modificare senza approvazione del centro.
+
+PERCORSI = [
+    {
+        "handle": "corpo-leggero", "numero": 7, "nome": "Corpo leggero", "area": "corpo",
+        "promessa": "Gambe leggere e una sensazione di leggerezza che dura.",
+        "adatto_a": "Per chi sente le gambe pesanti, con ritenzione e inestetismi della cellulite, e vuole un percorso che unisca drenaggio e tecnologia.",
+        "tecnologie": ["Drenaggio linfatico a fini estetici", "Pressoterapia", "Endosfer Endermologia", "Sauna Cocoon"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Linfodrenaggio a fini estetici oppure trattamento anticellulite", "prezzo": 110, "prezzo_pieno": None, "opzioni": "2 opzioni: linfodrenaggio CHF 110 oppure anticellulite CHF 160"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Anticellulite + linfodrenaggio", "prezzo": 256, "prezzo_pieno": 270, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 anticellulite + 3 linfodrenaggi", "prezzo": 729, "prezzo_pieno": 810, "opzioni": None},
+        ],
+        "faq": [
+            {"d": "Quante sedute servono di solito?", "r": "[DA INSERIRE: indicazione di Susana per questo percorso]"},
+            {"d": "Il drenaggio linfatico è un trattamento medico?", "r": "No: viene eseguito come drenaggio linfatico a fini estetici, per il benessere e la leggerezza delle gambe."},
+        ],
+        "in_evidenza": False, "stagionale": "Marzo - maggio",
+    },
+    {
+        "handle": "corpo-tonico", "numero": 8, "nome": "Corpo tonico", "area": "corpo",
+        "promessa": "Tonicità e silhouette, con la tecnologia giusta per te.",
+        "adatto_a": "Per chi vuole lavorare su tonicità e silhouette con tecnologie certificate, in un percorso costruito in consulenza.",
+        "tecnologie": ["Radiofrequenza corpo", "Cavitazione", "Radiofrequenza Triple Action"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Cavitazione oppure radiofrequenza corpo", "prezzo": 110, "prezzo_pieno": None, "opzioni": "2 opzioni: cavitazione CHF 110 oppure radiofrequenza corpo CHF 120"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Cavitazione + radiofrequenza corpo", "prezzo": 218, "prezzo_pieno": 230, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 cavitazioni + 3 radiofrequenze corpo", "prezzo": 621, "prezzo_pieno": 690, "opzioni": None},
+        ],
+        "faq": [
+            {"d": "Quante sedute servono di solito?", "r": "[DA INSERIRE: indicazione di Susana per questo percorso]"},
+            {"d": "Si sceglie la tecnologia prima della consulenza?", "r": "No: in consulenza gratuita valutiamo insieme la combinazione più adatta al tuo obiettivo."},
+        ],
+        "in_evidenza": False, "stagionale": "Marzo - maggio",
+    },
+    {
+        "handle": "luminosita", "numero": 1, "nome": "Luminosità", "area": "viso",
+        "promessa": "Una pelle che ritrova la sua luce naturale.",
+        "adatto_a": "Per chi vede la pelle spenta e stanca e vuole ritrovare freschezza e luminosità con il Metodo Rosa.",
+        "tecnologie": ["Trattamento manuale viso", "Prodotti alla rosa damascena"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Viso completo", "prezzo": 70, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Viso completo + trattamento viso", "prezzo": 242, "prezzo_pieno": 255, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "Viso completo + trattamento viso + Rituale Metodo Rosa in 3 mesi", "prezzo": 387, "prezzo_pieno": 430, "opzioni": None},
+        ],
+        "faq": [{"d": "Segue il Metodo Rosa?", "r": "Sì: ogni trattamento viso segue le cinque fasi del Metodo Rosa, adattate alla tua pelle."}],
+        "in_evidenza": False, "stagionale": "Settembre - ottobre",
+    },
+    {
+        "handle": "anti-age-metodo-rosa", "numero": 2, "nome": "Anti-age Metodo Rosa", "area": "viso",
+        "promessa": "Natura e tecnologia insieme, per una pelle che invecchia bene.",
+        "adatto_a": "Per chi vuole lavorare su rughe e segni del tempo con un protocollo che unisce tecnologia certificata e rosa damascena.",
+        "tecnologie": ["Plasma freddo", "Radiofrequenza viso", "Prodotti alla rosa damascena"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Rituale Metodo Rosa", "prezzo": 175, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Rituale + plasma freddo", "prezzo": 309, "prezzo_pieno": 325, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "Rituale + plasma freddo + radiofrequenza viso", "prezzo": 400, "prezzo_pieno": 445, "opzioni": None},
+        ],
+        "faq": [{"d": "Da che età è consigliato?", "r": "Non c'è un'età giusta: in consulenza valutiamo lo stato della tua pelle e gli obiettivi."}],
+        "in_evidenza": False, "stagionale": None,
+    },
+    {
+        "handle": "uniformita", "numero": 3, "nome": "Uniformità", "area": "viso",
+        "promessa": "Un colorito più uniforme e luminoso.",
+        "adatto_a": "Per chi vuole lavorare sulle macchie e sull'uniformità del colorito, con l'attestato O-LRNIS pelle e pigmentazione.",
+        "tecnologie": ["Plasma freddo", "Trattamento viso mirato"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Trattamento viso", "prezzo": 185, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Viso completo + plasma freddo", "prezzo": 318, "prezzo_pieno": 335, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 trattamenti viso in 3 mesi", "prezzo": 500, "prezzo_pieno": 555, "opzioni": None},
+        ],
+        "faq": [{"d": "Le macchie spariscono del tutto?", "r": "Ogni pelle risponde in modo diverso: il percorso aiuta a rendere il colorito più uniforme. Ne parliamo in consulenza."}],
+        "in_evidenza": False, "stagionale": "Settembre - ottobre",
+    },
+    {
+        "handle": "pelle-pulita", "numero": 4, "nome": "Pelle pulita", "area": "viso",
+        "promessa": "Una pelle pulita, in equilibrio, senza stress.",
+        "adatto_a": "Per chi convive con impurità e vuole una routine professionale che riporti equilibrio alla pelle.",
+        "tecnologie": ["Pulizia viso professionale", "Prodotti alla rosa damascena"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Viso completo", "prezzo": 70, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "2 viso completi a 4 settimane", "prezzo": 133, "prezzo_pieno": 140, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 viso completi + 1 trattamento viso", "prezzo": 356, "prezzo_pieno": 395, "opzioni": None},
+        ],
+        "faq": [{"d": "Va bene anche per pelli sensibili?", "r": "Sì: ogni fase viene adattata alla tua pelle durante la consulenza iniziale."}],
+        "in_evidenza": False, "stagionale": None,
+    },
+    {
+        "handle": "laser-senza-pensieri", "numero": 5, "nome": "Laser senza pensieri", "area": "peli",
+        "promessa": "La libertà di non pensarci più.",
+        "adatto_a": "Per chi cerca una soluzione duratura ai peli superflui, con laser a diodo e attestato federale O-LRNIS.",
+        "tecnologie": ["Laser a diodo (attestato federale O-LRNIS)"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "1 seduta su zona piccola", "prezzo": 80, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "6 sedute su zona piccola", "prezzo": 456, "prezzo_pieno": 480, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "6 sedute su zona piccola + una zona media", "prezzo": 1134, "prezzo_pieno": 1260, "opzioni": None},
+        ],
+        "faq": [{"d": "Il laser fa male?", "r": "La sensazione è personale: in consulenza ti spiego come funziona e proviamo su una piccola zona."}],
+        "in_evidenza": False, "stagionale": "Novembre - febbraio",
+    },
+    {
+        "handle": "liscia-tutto-l-anno", "numero": 6, "nome": "Liscia tutto l'anno", "area": "peli",
+        "promessa": "Pelle liscia in ogni stagione, senza pensieri.",
+        "adatto_a": "Per chi preferisce una soluzione rapida e regolare con ceretta programmata durante l'anno.",
+        "tecnologie": ["Ceretta professionale"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Ceretta mezza gamba + bikini + ascelle", "prezzo": 85, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "3 cerette programmate", "prezzo": 242, "prezzo_pieno": 255, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "6 cerette programmate", "prezzo": 459, "prezzo_pieno": 510, "opzioni": None},
+        ],
+        "faq": [{"d": "Ogni quanto si ripete la ceretta?", "r": "Di solito ogni 4 settimane: le sedute del percorso sono già programmate."}],
+        "in_evidenza": False, "stagionale": None,
+    },
+    {
+        "handle": "pausa-benessere", "numero": 9, "nome": "Pausa benessere", "area": "relax",
+        "promessa": "Un'ora tutta per te, per staccare davvero.",
+        "adatto_a": "Per chi vuole solo staccare: un momento di calma e cura, dal massaggio al viso completo.",
+        "tecnologie": ["Massaggio relax", "Riflessologia plantare", "Trattamento viso"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Massaggio relax", "prezzo": 110, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Massaggio + viso completo", "prezzo": 171, "prezzo_pieno": 180, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "Massaggio + viso completo + trattamento olistico", "prezzo": 243, "prezzo_pieno": 270, "opzioni": None},
+        ],
+        "faq": [{"d": "Posso regalarlo?", "r": "Sì: con i buoni regalo del centro, disponibili anche in busta regalo con un campioncino della linea alla rosa damascena."}],
+        "in_evidenza": True, "stagionale": "Giugno - agosto",
+    },
+    {
+        "handle": "equilibrio", "numero": 10, "nome": "Equilibrio", "area": "relax",
+        "promessa": "Un riequilibrio più profondo, per corpo e mente.",
+        "adatto_a": "Per chi cerca un riequilibrio più profondo con trattamenti olistici: Susana è Master Reiki.",
+        "tecnologie": ["Reiki (Susana è Master Reiki)", "Trattamento con suono", "Massaggio relax"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Trattamento olistico", "prezzo": 90, "prezzo_pieno": None, "opzioni": None},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Trattamento olistico + massaggio relax", "prezzo": 190, "prezzo_pieno": 200, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 trattamenti olistici in 3 mesi", "prezzo": 243, "prezzo_pieno": 270, "opzioni": None},
+        ],
+        "faq": [{"d": "Cos'è un trattamento olistico?", "r": "Un trattamento che lavora sull'equilibrio di corpo e mente, ad esempio con Reiki o suono. Te lo racconto volentieri in consulenza."}],
+        "in_evidenza": False, "stagionale": None,
+    },
+    {
+        "handle": "sguardo", "numero": 11, "nome": "Sguardo", "area": "sguardo",
+        "promessa": "Uno sguardo più intenso, ogni giorno.",
+        "adatto_a": "Per chi vuole ciglia e sopracciglia curate e definite, dalla laminazione al microblading (solo dopo consulenza).",
+        "tecnologie": ["Laminazione ciglia", "Laminazione sopracciglia", "Microblading"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Laminazione ciglia oppure regolazione sopracciglia", "prezzo": 30, "prezzo_pieno": None, "opzioni": "2 opzioni: laminazione ciglia CHF 110 oppure regolazione sopracciglia CHF 30"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Laminazione ciglia + laminazione sopracciglia", "prezzo": 190, "prezzo_pieno": 200, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "Microblading sopracciglia con ritocco incluso (solo dopo consulenza)", "prezzo": 405, "prezzo_pieno": 450, "opzioni": None},
+        ],
+        "faq": [{"d": "Il microblading è per tutte?", "r": "Si esegue solo dopo una consulenza: valutiamo pelle, aspettative e forma più adatta."}],
+        "in_evidenza": False, "stagionale": None,
+    },
+    {
+        "handle": "mani-e-piedi", "numero": 12, "nome": "Mani e piedi in ordine", "area": "maniepiedi",
+        "promessa": "Mani e piedi sempre curati, senza pensieri.",
+        "adatto_a": "Per chi vuole mani e piedi in ordine tutto l'anno, dalla manicure al semipermanente.",
+        "tecnologie": ["Manicure", "Semipermanente piedi"],
+        "livelli": [
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Manicure oppure semipermanente piedi", "prezzo": 75, "prezzo_pieno": None, "opzioni": "2 opzioni: manicure CHF 75 oppure semipermanente piedi CHF 80"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Manicure + semipermanente piedi", "prezzo": 147, "prezzo_pieno": 155, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "6 semipermanenti piedi", "prezzo": 432, "prezzo_pieno": 480, "opzioni": None},
+        ],
+        "faq": [{"d": "Quanto dura il semipermanente?", "r": "Di solito 3-4 settimane: con il percorso le sedute sono già programmate."}],
+        "in_evidenza": True, "stagionale": "Giugno - agosto",
+    },
+]
+
+AREE_ORDINE = [
+    ("corpo", "Corpo"),
+    ("viso", "Viso e Metodo Rosa"),
+    ("peli", "Peli"),
+    ("relax", "Relax e benessere"),
+    ("sguardo", "Sguardo"),
+    ("maniepiedi", "Mani e piedi"),
+]

@@ -1,0 +1,99 @@
+{
+  "project_identity": {
+    "name": "Beauty Care Losone - Estetica Beauty & Care",
+    "location": "Via Locarno 58, 6616 Losone, Ticino, Switzerland",
+    "owner": "Susana",
+    "experience": "21 anni di esperienza come estetista e body specialist",
+    "claim": "Corpo e pelle trattati con natura e tecnologia certificata.",
+    "signature": "Susana · Skin Expert Metodo Rosa",
+    "target_audience": "Donne 35+ e 50+ del Locarnese e Canton Ticino",
+    "vibe": "Studio specialistico di bellezza e benessere: calmo, curato, professionale e caldo"
+  },
+  "color_system": {
+    "background_base": "#FAF7F2",
+    "background_card": "#FFFDF9",
+    "background_elevated": "#F4EFE6",
+    "accent_primary_rosa_antico": "#B86A75",
+    "accent_primary_hover": "#A35964",
+    "accent_secondary_verde_salvia": "#8A9A85",
+    "text_antracite": "#2C2A29",
+    "text_muted": "#5C5855",
+    "border_subtle": "#E6DEC6",
+    "gold_highlight": "#D4AF37",
+    "rules": [
+      "Mai usare nero (#000000) o bianco (#FFFFFF) puro a pieno schermo.",
+      "Usare sempre toni caldi avorio/crema per lo sfondo e antracite per il testo.",
+      "Tutti i bottoni principali devono garantire un contrasto minimo WCAG AA 4.5:1.",
+      "Colore rosa antico per gli accenti Metodo Rosa e call to action principali.",
+      "Verde salvia tenue per gli accenti trattamenti corpo e tecnologia naturale."
+    ]
+  },
+  "typography": {
+    "headline_font": "Cormorant Garamond, Serif elegante",
+    "body_font": "Plus Jakarta Sans, Sans-serif ad alta leggibilità",
+    "desktop_body_size": "18px (text-[18px] o text-lg)",
+    "mobile_body_size": "17px (text-[17px])",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight text-antracite leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif tracking-tight text-antracite",
+      "h3": "text-xl sm:text-2xl font-serif text-antracite",
+      "h4": "text-lg sm:text-xl font-sans font-semibold text-antracite",
+      "subtitle": "text-base sm:text-lg font-sans text-muted leading-relaxed",
+      "caption": "text-xs sm:text-sm tracking-widest uppercase font-medium text-muted"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Spazi generosi (2x-3x rispetto ai layout tradizionali) per trasmettere senso di calma ed esclusività.",
+    "grid_mode": "Bento Grid asimmetrica per i trattamenti corpo e le certificazioni di Susana.",
+    "padding_containers": "px-4 sm:px-8 lg:px-16 py-12 lg:py-24",
+    "button_constraints": {
+      "min_height": "48px (min-h-[48px] py-3.5 px-6)",
+      "max_primary_buttons_per_screen": 2,
+      "style": "rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-md"
+    }
+  },
+  "image_urls": {
+    "hero_spa": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHxfHxzcGElMjB3ZWxsbmVzc3xlbnwwfHx8fDE3OTMwOTIwNzN8MA&ixlib=rb-4.1.0&q=85",
+    "rose_damascena_macro": "https://images.unsplash.com/photo-1575543483595-568b7afb6b9e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxyb3NlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzkzMDkyMDc0fDA&ixlib=rb-4.1.0&q=85",
+    "body_massage_treatment": "https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxtYXNzYWdlJTIwdHJlYXRtZW50fGVufDB8fHx8MTc5MzA5MjA3NHww&ixlib=rb-4.1.0&q=85",
+    "hot_stones_relax": "https://images.unsplash.com/photo-1696841212541-449ca29397cc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxzcGElMjB3ZWxsbmVzc3xlbnwwfHx8fDE3OTMwOTIwNzN8MA&ixlib=rb-4.1.0&q=85",
+    "rose_flower_skincare": "https://images.unsplash.com/photo-1579053778004-3a4d3f0fae19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxyb3NlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzkzMDkyMDc0fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "key_features_and_pages": {
+    "pages": [
+      "Homepage (/)",
+      "Corpo (/corpo)",
+      "Viso - Metodo Rosa (/viso)",
+      "Percorsi (/percorsi)",
+      "Dettaglio Percorso (/percorsi/:handle)",
+      "Chi Sono - Susana (/susana)",
+      "Listino Servizi (/servizi)",
+      "Buoni Regalo (/buoni-regalo)",
+      "Contatti (/contatti)",
+      "Link in Bio (/link)",
+      "Risultato Quiz (/risultato)",
+      "Pagina di Ringraziamento (/grazie)",
+      "Admin Panel Lead Quiz (/admin)"
+    ],
+    "interactive_quiz": {
+      "questions_count": 4,
+      "outcomes_count": 12,
+      "levels_per_outcome": 3,
+      "primary_conversion": "Invio risultato via WhatsApp per consulenza gratuita",
+      "design": "Modal interattivo a tutto schermo su mobile, una domanda alla volta con pulsanti grandi (min 48px), barra di avanzamento e transizioni animate."
+    },
+    "technologies_certified": [
+      "Pressoterapia",
+      "Endosfer Endermologia",
+      "Cavitazione",
+      "Radiofrequenza Triple Action",
+      "Sauna Cocoon",
+      "Laser a Diodo"
+    ]
+  },
+  "accessibility_and_testing": {
+    "wcag": "AA Level minimum",
+    "touch_targets": "Tutti i bottoni e link cliccabili con altezza minima 48px",
+    "data_testid_requirement": "Tutti gli elementi interattivi e rilevanti devono contenere data-testid in formato kebab-case (es. data-testid=\"quiz-start-button\", data-testid=\"nav-link-corpo\", data-testid=\"whatsapp-floating-btn\")"
+  }
+}
