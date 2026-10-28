@@ -77,10 +77,6 @@ const Viso = () => {
                   <figcaption className="px-4 py-3 text-sm font-medium text-muted-foreground">{p.nome}</figcaption>
                 </figure>
               ))}
-              <div className="flex aspect-[3/4] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-amber-500/50 bg-crema p-4 text-center" data-testid="prodotto-slot-altri">
-                <Placeholder label="altre foto dei prodotti e prezzi di vendita" />
-                <p className="text-sm font-medium text-muted-foreground">Altri prodotti della linea</p>
-              </div>
             </div>
           </div>
         </Reveal>

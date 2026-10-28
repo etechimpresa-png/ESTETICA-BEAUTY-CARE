@@ -10,11 +10,12 @@ export const IMAGES = {
   rosaFiore: "https://images.unsplash.com/photo-1579053778004-3a4d3f0fae19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxyb3NlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzkzMDkyMDc0fDA&ixlib=rb-4.1.0&q=85",
 };
 
-// Linea prodotti alla rosa damascena (foto reali dal centro)
+// Linea prodotti alla rosa damascena (foto professionali del centro)
 export const PRODOTTI = [
-  { nome: "Latte detergente e tonico viso", img: "/assets/centro/prodotto-tonico.webp" },
-  { nome: "Siero viso effetto lift", img: "/assets/centro/prodotto-siero.webp" },
-  { nome: "La linea completa", img: "/assets/centro/prodotto-linea.webp" },
+  { nome: "Siero viso – idratante nutriente, 30 ml", img: "/assets/centro/prod-linea-04.jpg" },
+  { nome: "La routine Metodo Rosa", img: "/assets/centro/prod-linea-03.jpg" },
+  { nome: "Siero viso Rosa Damascena", img: "/assets/centro/prod-linea-02.jpg" },
+  { nome: "La linea completa alla rosa damascena", img: "/assets/centro/prod-linea-01.jpg" },
 ];
 
 export const TECNOLOGIE_CORPO = [

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ShieldCheck, ChevronDown, ShoppingBag, Sparkles } from "lucide-react";
+import { ShieldCheck, ChevronDown, CalendarCheck, Sparkles } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import { getPercorso } from "@/lib/api";
-import { GARANZIA, LAVORI_SGUARDO } from "@/lib/content";
+import { GARANZIA, LAVORI_SGUARDO, FRESHA_URL } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
 
@@ -37,14 +37,16 @@ export const LivelloCard = ({ livello, consigliato, scontoAttivo }) => (
     {(livello.n === 2 || livello.n === 3) && (
       <p className="mt-2 text-sm font-medium text-[#4c5c48]">In omaggio un prodotto della linea in formato viaggio</p>
     )}
-    <button
-      data-testid={`livello-${livello.n}-add-cart`}
-      className="btn-primary mt-6 w-full cursor-not-allowed opacity-60"
-      title="La vendita online arriva con il collegamento Shopify (Fase 4)"
+    <a
+      data-testid={`livello-${livello.n}-prenota-btn`}
+      href={FRESHA_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn-primary mt-6 w-full"
     >
-      <ShoppingBag size={17} /> Aggiungi al carrello
-    </button>
-    <p className="mt-2 text-center text-xs text-muted-foreground">Vendita online in arrivo (collegamento Shopify)</p>
+      <CalendarCheck size={17} /> Prenota su Fresha
+    </a>
+    <p className="mt-2 text-center text-xs text-muted-foreground">Prenotazione online sicura, in un minuto</p>
   </div>
 );
 
@@ -92,11 +94,11 @@ const PercorsoDetail = () => {
 
       <Reveal>
         <div className="mt-16 rounded-[2rem] bg-elevato p-8 lg:p-10">
-          <h2 className="font-serif text-2xl font-semibold text-antracite">Come funziona dopo l'acquisto</h2>
+          <h2 className="font-serif text-2xl font-semibold text-antracite">Come funziona</h2>
           <ol className="mt-5 space-y-3 text-muted-foreground">
-            <li><strong className="text-antracite">1.</strong> Paghi online, in sicurezza.</li>
-            <li><strong className="text-antracite">2.</strong> Prenoti su Fresha la consulenza inclusa come primo appuntamento.</li>
-            <li><strong className="text-antracite">3.</strong> Dalla seconda seduta prenoti le sedute successive su Fresha.</li>
+            <li><strong className="text-antracite">1.</strong> Prenoti su Fresha il livello scelto.</li>
+            <li><strong className="text-antracite">2.</strong> Il primo appuntamento è la consulenza inclusa: valutiamo insieme il tuo obiettivo.</li>
+            <li><strong className="text-antracite">3.</strong> Le sedute successive si prenotano su Fresha, con calma e senza pensieri.</li>
           </ol>
         </div>
       </Reveal>

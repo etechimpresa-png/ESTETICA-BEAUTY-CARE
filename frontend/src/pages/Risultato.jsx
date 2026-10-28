@@ -75,7 +75,7 @@ const Risultato = () => {
                 <>
                   <TicketPercent size={24} className="mt-0.5 shrink-0 text-rosa" />
                   <p className="text-antracite/85">
-                    <strong>Il tuo vantaggio:</strong> con il codice <strong>QUIZ10</strong> hai il 10% sul primo trattamento (livello 1). Si applica automaticamente al carrello.
+                    <strong>Il tuo vantaggio:</strong> con il codice <strong>QUIZ10</strong> hai il 10% sul primo trattamento (livello 1): lo applichiamo alla tua prima prenotazione.
                   </p>
                 </>
               ) : (

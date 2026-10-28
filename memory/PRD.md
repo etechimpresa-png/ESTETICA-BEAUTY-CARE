@@ -45,6 +45,10 @@
 - Foto recuperate dal vecchio sito esteticabeautycare.com (/assets/centro/): ritratto di Susana (pagina Susana + blocco Home), ricezione del centro (Contatti), foto massaggio (hero Corpo), foto trattamento viso (hero Viso), 3 foto prodotti alla rosa damascena (sezione linea prodotti su /viso).
 - Telefono del centro impostato: 091 730 10 77 (dal vecchio sito).
 
+## Aggiornamento prenotazioni e prodotti (28.10.2026, terza passata)
+- DECISIONE UTENTE: i percorsi NON si vendono via Shopify per ora — ogni livello di ogni percorso ha il pulsante "Prenota su Fresha" collegato al listino prenotazioni del centro. Testo "Come funziona" aggiornato (prenotazione, non acquisto online). Codice QUIZ10 applicato alla prima prenotazione in centro.
+- Foto prodotti sostituite con le 4 foto professionali caricate dall'utente (/assets/centro/prod-linea-01..04.jpg) su /viso e nel blocco Metodo Rosa della Home.
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

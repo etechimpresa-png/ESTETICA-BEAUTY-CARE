@@ -176,7 +176,7 @@ const Home = () => {
       <section className="container-site grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
         <Reveal>
           <div className="relative overflow-hidden rounded-[2rem] shadow-lg" style={{ aspectRatio: "1/1" }}>
-            <img src={IMAGES.rosaMacro} alt="Rosa damascena, il cuore della linea di prodotti del centro" className="h-full w-full object-cover" loading="lazy" />
+            <img src="/assets/centro/prod-linea-01.jpg" alt="La linea di prodotti alla rosa damascena creata da Susana" className="h-full w-full object-cover" loading="lazy" />
           </div>
         </Reveal>
         <Reveal delay={0.15}>
