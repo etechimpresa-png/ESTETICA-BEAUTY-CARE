@@ -4,7 +4,7 @@ import { ShieldCheck, ChevronDown, ShoppingBag, Sparkles } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import { getPercorso } from "@/lib/api";
-import { GARANZIA } from "@/lib/content";
+import { GARANZIA, LAVORI_SGUARDO } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
 
@@ -125,6 +125,25 @@ const PercorsoDetail = () => {
                   </summary>
                   <p className="px-5 pb-4 text-[15px] leading-relaxed text-muted-foreground">{f.r}</p>
                 </details>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      )}
+
+      {p.handle === "sguardo" && (
+        <Reveal>
+          <div className="mt-14">
+            <h2 className="font-serif text-2xl font-semibold text-antracite">I lavori sullo sguardo</h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+              Foto reali fatte in cabina: trucco permanente labbra, laminazione e definizione delle sopracciglia.
+            </p>
+            <div className="mt-7 grid grid-cols-2 gap-4 md:grid-cols-3">
+              {LAVORI_SGUARDO.map((l, i) => (
+                <figure key={l.img} className="group overflow-hidden rounded-2xl border border-border bg-carta" data-testid={`sguardo-lavoro-${i}`}>
+                  <img src={l.img} alt={l.didascalia} className="aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                  <figcaption className="px-3 py-2.5 text-xs font-medium text-muted-foreground">{l.didascalia}</figcaption>
+                </figure>
               ))}
             </div>
           </div>

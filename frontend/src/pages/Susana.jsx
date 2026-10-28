@@ -1,6 +1,6 @@
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
-import { ATTESTATI, METODO_ROSA, SUSANA_STORIA, SUSANA_COMPETENZE } from "@/lib/content";
+import { ATTESTATI, METODO_ROSA, SUSANA_STORIA, SUSANA_COMPETENZE, IMAGES } from "@/lib/content";
 import { BadgeCheck } from "lucide-react";
 
 const Susana = () => (
@@ -8,8 +8,8 @@ const Susana = () => (
     <section className="container-site py-16 lg:py-24">
       <div className="grid items-start gap-12 lg:grid-cols-[1fr_1.2fr]">
         <Reveal>
-          <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-[2rem] border border-dashed border-amber-500/50 bg-elevato">
-            <Placeholder label="foto di Susana (giornata di shooting)" />
+          <div className="relative overflow-hidden rounded-[2rem] shadow-lg" style={{ aspectRatio: "3/4" }}>
+            <img src={IMAGES.susana} alt="Susana, titolare ed estetista di Beauty & Care Losone" className="h-full w-full object-cover object-top" />
           </div>
         </Reveal>
         <Reveal delay={0.12}>

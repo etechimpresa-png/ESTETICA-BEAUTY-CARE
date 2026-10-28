@@ -40,6 +40,11 @@
 - Spazi pronti: 4 slot linea prodotti rosa damascena su /viso; 3 slot foto negozio su /contatti.
 - Assets: /app/frontend/public/assets/attestati (3) e /assets/lavori (19, HEIC convertiti in JPG).
 
+## Aggiornamento foto (28.10.2026, seconda passata)
+- Tutte le 19 foto prima/dopo in uso: 13 corpo su /corpo (sezione spostata subito dopo l'hero, prima dell'elenco servizi), 6 labbra/sopracciglia su /percorsi/sguardo; le migliori anche in Home.
+- Foto recuperate dal vecchio sito esteticabeautycare.com (/assets/centro/): ritratto di Susana (pagina Susana + blocco Home), ricezione del centro (Contatti), foto massaggio (hero Corpo), foto trattamento viso (hero Viso), 3 foto prodotti alla rosa damascena (sezione linea prodotti su /viso).
+- Telefono del centro impostato: 091 730 10 77 (dal vecchio sito).
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

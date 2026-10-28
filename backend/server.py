@@ -42,7 +42,7 @@ DEFAULT_SETTINGS = {
     "fresha_url": "https://www.fresha.com/it/a/estetica-beauty-and-care-losone-via-locarno-58-jwl8ceyb/booking",
     "fresha_consulenza_url": "",
     "fresha_buoni_url": "",
-    "telefono": "",
+    "telefono": "091 730 10 77",
     "email": "",
 }
 

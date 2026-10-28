@@ -63,6 +63,26 @@ const Corpo = () => {
         </div>
       </section>
 
+      {/* PRIMA E DOPO - subito dopo l'introduzione */}
+      <section className="container-site py-14 lg:py-20">
+        <Reveal>
+          <div className="rounded-[2rem] border border-border bg-carta p-8 lg:p-12">
+            <h2 className="font-serif text-2xl font-semibold text-antracite sm:text-3xl">Prima e dopo: i risultati dei percorsi corpo</h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+              Foto reali fatte in cabina, pubblicate con il consenso delle clienti. Ogni corpo è diverso: i tempi e i risultati si valutano in consulenza.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+              {LAVORI_CORPO.map((l, i) => (
+                <figure key={l.img} className="group overflow-hidden rounded-2xl border border-border" data-testid={`corpo-lavoro-${i}`}>
+                  <img src={l.img} alt={l.didascalia} className="aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                  <figcaption className="px-3 py-2.5 text-xs font-medium text-muted-foreground">{l.didascalia}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       <section className="container-site space-y-8 py-16 lg:py-20">
         {SEZIONI.map((s, i) => (
           <Reveal key={s.titolo}>
@@ -105,23 +125,6 @@ const Corpo = () => {
         ))}
 
         {/* PRIMA E DOPO */}
-        <Reveal>
-          <div className="rounded-[2rem] border border-border bg-carta p-8 lg:p-12">
-            <h2 className="font-serif text-2xl font-semibold text-antracite sm:text-3xl">Prima e dopo: i risultati dei percorsi corpo</h2>
-            <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
-              Foto reali fatte in cabina, pubblicate con il consenso delle clienti. Ogni corpo è diverso: i tempi e i risultati si valutano in consulenza.
-            </p>
-            <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
-              {LAVORI_CORPO.map((l, i) => (
-                <figure key={l.img} className="group overflow-hidden rounded-2xl border border-border" data-testid={`corpo-lavoro-${i}`}>
-                  <img src={l.img} alt={l.didascalia} className="aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
-                  <figcaption className="px-3 py-2.5 text-xs font-medium text-muted-foreground">{l.didascalia}</figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </Reveal>
-
         {settings.rme_valido && (
           <Reveal>
             <div className="rounded-[2rem] bg-salvia-soft p-8 lg:p-10">

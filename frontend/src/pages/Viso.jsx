@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import PercorsoCard from "@/components/PercorsoCard";
-import { METODO_ROSA, IMAGES } from "@/lib/content";
+import { METODO_ROSA, IMAGES, PRODOTTI } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 import { Sparkles } from "lucide-react";
 
@@ -22,7 +22,7 @@ const Viso = () => {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="overflow-hidden rounded-[2rem] shadow-lg" style={{ aspectRatio: "4/3" }}>
-              <img src={IMAGES.rosaFiore} alt="Rosa damascena, ingrediente della linea di prodotti del centro" className="h-full w-full object-cover" loading="lazy" />
+              <img src={IMAGES.viso} alt="Trattamento viso in cabina al centro Beauty & Care" className="h-full w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
         </div>
@@ -71,12 +71,16 @@ const Viso = () => {
               I prodotti naturali creati da Susana, gli stessi usati in cabina: latte, tonico, siero e crema alla rosa damascena. Per ora li trovi in centro; presto anche online.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
-              {["Latte detergente", "Tonico", "Siero", "Crema viso"].map((nome) => (
-                <div key={nome} className="flex aspect-[3/4] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-amber-500/50 bg-crema p-4 text-center" data-testid={`prodotto-slot-${nome.toLowerCase().replace(/\s/g, "-")}`}>
-                  <Placeholder label={`foto ${nome} alla rosa damascena`} />
-                  <p className="text-sm font-medium text-muted-foreground">{nome}</p>
-                </div>
+              {PRODOTTI.map((p) => (
+                <figure key={p.nome} className="group overflow-hidden rounded-2xl border border-border bg-crema" data-testid={`prodotto-${p.nome.toLowerCase().replace(/\s/g, "-")}`}>
+                  <img src={p.img} alt={p.nome} className="aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                  <figcaption className="px-4 py-3 text-sm font-medium text-muted-foreground">{p.nome}</figcaption>
+                </figure>
               ))}
+              <div className="flex aspect-[3/4] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-amber-500/50 bg-crema p-4 text-center" data-testid="prodotto-slot-altri">
+                <Placeholder label="altre foto dei prodotti e prezzi di vendita" />
+                <p className="text-sm font-medium text-muted-foreground">Altri prodotti della linea</p>
+              </div>
             </div>
           </div>
         </Reveal>

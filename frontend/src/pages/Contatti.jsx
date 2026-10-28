@@ -1,6 +1,6 @@
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
-import { ORARI } from "@/lib/content";
+import { ORARI, IMAGES } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
@@ -22,7 +22,10 @@ const Contatti = () => {
           <div>
             <h2 className="font-serif text-xl font-semibold text-antracite">Il centro</h2>
             <div className="mt-4 grid grid-cols-3 gap-3">
-              {["ingresso", "cabina", "accoglienza"].map((slot) => (
+              <figure className="overflow-hidden rounded-2xl border border-border" data-testid="centro-foto-accoglienza">
+                <img src={IMAGES.ricezione} alt="L'accoglienza del centro Beauty & Care a Losone" className="aspect-[3/4] h-full w-full object-cover" loading="lazy" />
+              </figure>
+              {["ingresso", "cabina"].map((slot) => (
                 <div key={slot} className="flex aspect-[3/4] items-center justify-center rounded-2xl border border-dashed border-amber-500/50 bg-elevato p-3 text-center" data-testid={`centro-foto-slot-${slot}`}>
                   <Placeholder label={`foto del negozio: ${slot}`} />
                 </div>

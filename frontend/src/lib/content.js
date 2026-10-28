@@ -3,10 +3,19 @@ export const FRESHA_URL = "https://www.fresha.com/it/a/estetica-beauty-and-care-
 export const IMAGES = {
   hero: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHxfHxzcGElMjB3ZWxsbmVzc3xlbnwwfHx8fDE3OTMwOTIwNzN8MA&ixlib=rb-4.1.0&q=85",
   rosaMacro: "https://images.unsplash.com/photo-1575543483595-568b7afb6b9e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxyb3NlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzkzMDkyMDc0fDA&ixlib=rb-4.1.0&q=85",
-  massaggio: "https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxtYXNzYWdlJTIwdHJlYXRtZW50fGVufDBfHx8fDE3OTMwOTIwNzR8MA&ixlib=rb-4.1.0&q=85",
-  pietre: "https://images.unsplash.com/photo-1696841212541-449ca29397cc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxzcGElMjB3ZWxsbmVzc3xlbnwwfHx8fDE3OTMwOTIwNzN8MA&ixlib=rb-4.1.0&q=85",
+  massaggio: "/assets/centro/card-corpo.webp",
+  viso: "/assets/centro/card-viso.webp",
+  susana: "/assets/centro/chi-siamo.webp",
+  ricezione: "/assets/centro/hero-split.webp",
   rosaFiore: "https://images.unsplash.com/photo-1579053778004-3a4d3f0fae19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxyb3NlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzkzMDkyMDc0fDA&ixlib=rb-4.1.0&q=85",
 };
+
+// Linea prodotti alla rosa damascena (foto reali dal centro)
+export const PRODOTTI = [
+  { nome: "Latte detergente e tonico viso", img: "/assets/centro/prodotto-tonico.webp" },
+  { nome: "Siero viso effetto lift", img: "/assets/centro/prodotto-siero.webp" },
+  { nome: "La linea completa", img: "/assets/centro/prodotto-linea.webp" },
+];
 
 export const TECNOLOGIE_CORPO = [
   "Pressoterapia",
@@ -65,11 +74,25 @@ export const LAVORI_CORPO = [
   { img: "/assets/lavori/lavoro-10.jpg", didascalia: "Percorso corpo – dopo 10 trattamenti" },
   { img: "/assets/lavori/lavoro-05.jpg", didascalia: "Percorso corpo – prima e dopo" },
   { img: "/assets/lavori/lavoro-06.jpg", didascalia: "Percorso corpo – addome" },
+  { img: "/assets/lavori/lavoro-07.jpg", didascalia: "Percorso corpo – profilo" },
+  { img: "/assets/lavori/lavoro-08.jpg", didascalia: "Percorso corpo – prima e dopo" },
   { img: "/assets/lavori/lavoro-09.jpg", didascalia: "Percorso corpo – profilo" },
-  { img: "/assets/lavori/lavoro-14.jpg", didascalia: "Percorso corpo – prima e dopo" },
-  { img: "/assets/lavori/lavoro-17.jpg", didascalia: "Percorso corpo – il percorso nel tempo" },
+  { img: "/assets/lavori/lavoro-11.jpg", didascalia: "Percorso corpo – dopo 10 trattamenti" },
   { img: "/assets/lavori/lavoro-12.jpg", didascalia: "Percorso corpo – prima e dopo" },
   { img: "/assets/lavori/lavoro-13.jpg", didascalia: "Percorso corpo – profilo" },
+  { img: "/assets/lavori/lavoro-14.jpg", didascalia: "Percorso corpo – addome" },
+  { img: "/assets/lavori/lavoro-15.jpg", didascalia: "Percorso corpo – il percorso nel tempo" },
+  { img: "/assets/lavori/lavoro-16.jpg", didascalia: "Percorso corpo – il percorso nel tempo" },
+  { img: "/assets/lavori/lavoro-17.jpg", didascalia: "Percorso corpo – il percorso nel tempo" },
+];
+
+export const LAVORI_SGUARDO = [
+  { img: "/assets/lavori/lavoro-01.jpg", didascalia: "Trucco permanente labbra – risultato" },
+  { img: "/assets/lavori/lavoro-02.jpg", didascalia: "Trucco permanente labbra – progettazione" },
+  { img: "/assets/lavori/lavoro-03.jpg", didascalia: "Trucco permanente labbra – disegno" },
+  { img: "/assets/lavori/lavoro-04.jpg", didascalia: "Trucco permanente labbra – risultato" },
+  { img: "/assets/lavori/lavoro-18.jpg", didascalia: "Sopracciglia – prima e dopo" },
+  { img: "/assets/lavori/lavoro-19.jpg", didascalia: "Laminazione sopracciglia – prima e dopo" },
 ];
 
 export const LAVORI_HOME = [

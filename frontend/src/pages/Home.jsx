@@ -270,8 +270,8 @@ const Home = () => {
           </Link>
         </Reveal>
         <Reveal delay={0.15}>
-          <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-[2rem] border border-dashed border-amber-500/50 bg-elevato">
-            <Placeholder label="foto di Susana al lavoro" />
+          <div className="relative overflow-hidden rounded-[2rem] shadow-lg" style={{ aspectRatio: "4/3" }}>
+            <img src={IMAGES.susana} alt="Susana, Skin Expert Metodo Rosa" className="h-full w-full object-cover object-top" loading="lazy" />
           </div>
         </Reveal>
       </section>
