@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Reveal from "@/components/Reveal";
 import FreshaButton from "@/components/FreshaButton";
 import { LISTINO, FRESHA_URL } from "@/lib/content";
+import { trackEvent } from "@/lib/api";
 import { useSite } from "@/lib/siteContext";
 
 const Prezzo = ({ prezzo }) => {
@@ -60,6 +61,7 @@ const Servizi = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="btn-secondary !min-h-[44px] !px-5 !py-2 text-sm"
+                          onClick={() => trackEvent("fresha_click")}
                         >
                           Prenota su Fresha
                         </a>

@@ -52,6 +52,11 @@
 ## Foto cabina (28.10.2026, quarta passata)
 - 4 foto cabina caricate dall'utente (/assets/centro/cabina-*.jpg, zona-pedicure.jpg): hero Home (cabina trattamenti), hero Corpo (cabina con macchinario), hero Viso (cabina viso), galleria "Il centro" su Contatti (4 reali + 1 placeholder ingresso rimasto).
 
+## Analytics interna (28.10.2026)
+- DECISIONE UTENTE: niente Shopify, in nessuna forma.
+- Statistiche leggere senza cookie: POST /api/stats/track (pageview per pagina, quiz_start, quiz_submit, whatsapp_click, fresha_click) e GET /api/stats/summary protetto. Dashboard "Statistiche del sito" in /admin: visite oggi/7gg/30gg, contatti totali, quiz iniziati/completati, clic WhatsApp/Fresha, pagine più visitate.
+- I lead del quiz restano in /admin (tabella + filtri + export CSV).
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

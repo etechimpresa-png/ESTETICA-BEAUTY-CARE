@@ -3,6 +3,7 @@ import "@/App.css";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Lenis from "lenis";
 import { SiteProvider } from "@/lib/siteContext";
+import { trackEvent } from "@/lib/api";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Corpo from "@/pages/Corpo";
@@ -24,6 +25,7 @@ const ScrollManager = () => {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
+    trackEvent("pageview", pathname);
   }, [pathname]);
   return null;
 };

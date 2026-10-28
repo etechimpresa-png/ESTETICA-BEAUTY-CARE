@@ -183,6 +183,59 @@ async def export_quiz_leads(admin=Depends(require_admin)):
     return StreamingResponse(iter([output.getvalue()]), media_type="text/csv", headers={"Content-Disposition": "attachment; filename=contatti-quiz.csv"})
 
 
+# ---------- Statistiche leggere (privacy-friendly, senza cookie) ----------
+
+ALLOWED_EVENTS = {"pageview", "quiz_start", "quiz_submit", "whatsapp_click", "fresha_click"}
+
+
+class TrackEvent(BaseModel):
+    event: str
+    path: Optional[str] = None
+
+
+@api_router.post("/stats/track")
+async def track_event(ev: TrackEvent):
+    if ev.event not in ALLOWED_EVENTS:
+        raise HTTPException(status_code=422, detail="Evento non valido")
+    await db.stats_events.insert_one({
+        "event": ev.event,
+        "path": (ev.path or "/")[:200],
+        "ts": datetime.now(timezone.utc).isoformat(),
+    })
+    return {"ok": True}
+
+
+@api_router.get("/stats/summary")
+async def stats_summary(admin=Depends(require_admin)):
+    now = datetime.now(timezone.utc)
+    from collections import Counter
+
+    def since(days):
+        return (now - timedelta(days=days)).isoformat()
+
+    events = await db.stats_events.find({"ts": {"$gte": since(30)}}, {"_id": 0}).to_list(20000)
+    by_event = Counter(e["event"] for e in events)
+    pageviews = [e for e in events if e["event"] == "pageview"]
+    top_pages = Counter(e["path"] for e in pageviews).most_common(8)
+    last7 = sum(1 for e in pageviews if e["ts"] >= since(7))
+    today = now.strftime("%Y-%m-%d")
+    oggi = sum(1 for e in pageviews if e["ts"].startswith(today))
+    per_giorno = Counter(e["ts"][:10] for e in pageviews)
+    leads_total = await db.quiz_leads.count_documents({})
+    return {
+        "visite_30gg": len(pageviews),
+        "visite_7gg": last7,
+        "visite_oggi": oggi,
+        "quiz_iniziati_30gg": by_event.get("quiz_start", 0),
+        "quiz_completati_30gg": by_event.get("quiz_submit", 0),
+        "clic_whatsapp_30gg": by_event.get("whatsapp_click", 0),
+        "clic_fresha_30gg": by_event.get("fresha_click", 0),
+        "lead_totali": leads_total,
+        "pagine_top": [{"path": p, "visite": n} for p, n in top_pages],
+        "per_giorno": [{"giorno": g, "visite": n} for g, n in sorted(per_giorno.items())],
+    }
+
+
 @api_router.get("/")
 async def root():
     return {"message": "Beauty & Care Losone API"}

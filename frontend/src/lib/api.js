@@ -19,3 +19,12 @@ export const adminUpdateSettings = (token, settings) =>
   api.put("/settings", settings, { headers: { Authorization: `Bearer ${token}` } }).then((r) => r.data);
 
 export const adminExportUrl = () => `${API}/quiz-leads/export`;
+
+export const trackEvent = (event, path) => {
+  try {
+    api.post("/stats/track", { event, path: path || window.location.pathname });
+  } catch (e) {}
+};
+
+export const adminGetStats = (token) =>
+  api.get("/stats/summary", { headers: { Authorization: `Bearer ${token}` } }).then((r) => r.data);

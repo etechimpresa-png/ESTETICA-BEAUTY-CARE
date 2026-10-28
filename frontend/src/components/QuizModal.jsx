@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, X, Sparkles } from "lucide-react";
 import { useSite } from "@/lib/siteContext";
-import { postQuizLead } from "@/lib/api";
+import { postQuizLead, trackEvent } from "@/lib/api";
 import {
   D1_OPTIONS, D2_OPTIONS, D3_OPTIONS, D4_OPTIONS,
   computeResult, buildWhatsAppMessage,
@@ -103,6 +103,7 @@ const QuizModal = () => {
     };
     try {
       await postQuizLead(lead);
+      trackEvent("quiz_submit");
     } catch (e) {
       // Il dato resta tracciato lato client e riprovabile; non blocchiamo il risultato.
     }

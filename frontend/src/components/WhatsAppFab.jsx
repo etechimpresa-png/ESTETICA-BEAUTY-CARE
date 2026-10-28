@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { useSite } from "@/lib/siteContext";
+import { trackEvent } from "@/lib/api";
 
 export const waLink = (number, message) =>
   `https://wa.me/${number}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
@@ -14,6 +15,7 @@ const WhatsAppFab = () => {
   if (quizOpen || location.pathname === "/link") return null;
 
   const handleClick = () => {
+    trackEvent("whatsapp_click");
     if (settings.whatsapp_number) {
       window.open(waLink(settings.whatsapp_number, "Ciao, vorrei informazioni sui trattamenti di Beauty & Care."), "_blank", "noopener");
     } else {

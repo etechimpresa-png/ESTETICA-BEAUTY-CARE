@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Download, LogOut } from "lucide-react";
-import { adminLogin, adminGetLeads, adminUpdateSettings, adminExportUrl, api } from "@/lib/api";
+import { adminLogin, adminGetLeads, adminUpdateSettings, adminGetStats, api } from "@/lib/api";
 import { useSite } from "@/lib/siteContext";
 
 const FLAGS = [
@@ -19,10 +19,11 @@ const Admin = () => {
   const [error, setError] = useState("");
   const [leads, setLeads] = useState(null);
   const [filtro, setFiltro] = useState("");
+  const [stats, setStats] = useState(null);
 
   const load = (t, f) => adminGetLeads(t, f || undefined).then((d) => setLeads(d.leads)).catch(() => setError("Sessione scaduta, accedi di nuovo."));
 
-  useEffect(() => { if (token) load(token, filtro); }, [token, filtro]);
+  useEffect(() => { if (token) { load(token, filtro); adminGetStats(token).then(setStats).catch(() => {}); } }, [token, filtro]);
 
   const doLogin = async (e) => {
     e.preventDefault();
@@ -84,6 +85,42 @@ const Admin = () => {
           </button>
         </div>
       </div>
+
+      {stats && (
+        <div className="mt-8" data-testid="admin-stats">
+          <h2 className="font-serif text-xl font-semibold text-antracite">Statistiche del sito</h2>
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
+            {[
+              ["Visite oggi", stats.visite_oggi],
+              ["Visite ultimi 7 giorni", stats.visite_7gg],
+              ["Visite ultimi 30 giorni", stats.visite_30gg],
+              ["Contatti dal quiz (totali)", stats.lead_totali],
+              ["Quiz iniziati (30 gg)", stats.quiz_iniziati_30gg],
+              ["Quiz completati (30 gg)", stats.quiz_completati_30gg],
+              ["Clic su WhatsApp (30 gg)", stats.clic_whatsapp_30gg],
+              ["Clic su Fresha (30 gg)", stats.clic_fresha_30gg],
+            ].map(([label, val]) => (
+              <div key={label} className="rounded-2xl border border-border bg-carta p-5" data-testid={`stat-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
+                <p className="text-3xl font-semibold text-rosa">{val}</p>
+                <p className="mt-1 text-sm text-muted-foreground">{label}</p>
+              </div>
+            ))}
+          </div>
+          {stats.pagine_top?.length > 0 && (
+            <div className="mt-4 rounded-2xl border border-border bg-carta p-5">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Pagine più visitate (30 giorni)</p>
+              <ul className="space-y-1.5 text-[15px]">
+                {stats.pagine_top.map((p) => (
+                  <li key={p.path} className="flex justify-between gap-4">
+                    <span className="text-antracite">{p.path === "/" ? "Home" : p.path}</span>
+                    <span className="font-semibold text-rosa">{p.visite}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
 
       <div className="mt-8 rounded-3xl border border-border bg-carta p-6">
         <h2 className="font-serif text-xl font-semibold text-antracite">Interruttori del sito</h2>

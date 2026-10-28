@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { getSettings, getPercorsi } from "./api";
+import { trackEvent } from "./api";
 
 const SiteContext = createContext(null);
 
@@ -33,7 +34,10 @@ export function SiteProvider({ children }) {
     return () => clearTimeout(t);
   }, [quizDismissed]);
 
-  const openQuiz = useCallback(() => setQuizOpen(true), []);
+  const openQuiz = useCallback(() => {
+    setQuizOpen(true);
+    trackEvent("quiz_start");
+  }, []);
   const closeQuiz = useCallback(() => {
     setQuizOpen(false);
     setQuizDismissed(true);
