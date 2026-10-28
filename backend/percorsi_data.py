@@ -24,9 +24,9 @@ PERCORSI = [
         "adatto_a": "Per chi vuole lavorare su tonicità e silhouette con tecnologie certificate, in un percorso costruito in consulenza.",
         "tecnologie": ["Radiofrequenza corpo", "Cavitazione", "Radiofrequenza Triple Action"],
         "livelli": [
-            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Cavitazione oppure radiofrequenza corpo", "prezzo": 110, "prezzo_pieno": None, "opzioni": "2 opzioni: cavitazione CHF 110 oppure radiofrequenza corpo CHF 120"},
-            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Cavitazione + radiofrequenza corpo", "prezzo": 218, "prezzo_pieno": 230, "opzioni": None},
-            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 cavitazioni + 3 radiofrequenze corpo", "prezzo": 621, "prezzo_pieno": 690, "opzioni": None},
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Anticellulite (cavitazione ultrasonica) oppure radiofrequenza", "prezzo": 130, "prezzo_pieno": None, "opzioni": "2 opzioni: anticellulite CHF 160 oppure radiofrequenza CHF 130"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Anticellulite + radiofrequenza", "prezzo": 275, "prezzo_pieno": 290, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 anticellulite + 3 radiofrequenze", "prezzo": 783, "prezzo_pieno": 870, "opzioni": None},
         ],
         "faq": [
             {"d": "Quante sedute servono di solito?", "r": "[DA INSERIRE: indicazione di Susana per questo percorso]"},
@@ -144,8 +144,8 @@ PERCORSI = [
         "adatto_a": "Per chi vuole ciglia e sopracciglia curate e definite, dalla laminazione al microblading (solo dopo consulenza).",
         "tecnologie": ["Laminazione ciglia", "Laminazione sopracciglia", "Microblading"],
         "livelli": [
-            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Laminazione ciglia oppure regolazione sopracciglia", "prezzo": 30, "prezzo_pieno": None, "opzioni": "2 opzioni: laminazione ciglia CHF 110 oppure regolazione sopracciglia CHF 30"},
-            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Laminazione ciglia + laminazione sopracciglia", "prezzo": 190, "prezzo_pieno": 200, "opzioni": None},
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Laminazione ciglia oppure regolazione sopracciglia", "prezzo": 20, "prezzo_pieno": None, "opzioni": "2 opzioni: laminazione ciglia CHF 110 oppure regolazione sopracciglia CHF 20"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Laminazione ciglia + laminazione sopracciglia", "prezzo": 152, "prezzo_pieno": 160, "opzioni": None},
             {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "Microblading sopracciglia con ritocco incluso (solo dopo consulenza)", "prezzo": 405, "prezzo_pieno": 450, "opzioni": None},
         ],
         "faq": [{"d": "Il microblading è per tutte?", "r": "Si esegue solo dopo una consulenza: valutiamo pelle, aspettative e forma più adatta."}],
@@ -157,9 +157,9 @@ PERCORSI = [
         "adatto_a": "Per chi vuole mani e piedi in ordine tutto l'anno, dalla manicure al semipermanente.",
         "tecnologie": ["Manicure", "Semipermanente piedi"],
         "livelli": [
-            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Manicure oppure semipermanente piedi", "prezzo": 75, "prezzo_pieno": None, "opzioni": "2 opzioni: manicure CHF 75 oppure semipermanente piedi CHF 80"},
-            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Manicure + semipermanente piedi", "prezzo": 147, "prezzo_pieno": 155, "opzioni": None},
-            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "6 semipermanenti piedi", "prezzo": 432, "prezzo_pieno": 480, "opzioni": None},
+            {"n": 1, "titolo": "Livello 1 – Base", "servizi": "Manicure oppure semipermanente piedi", "prezzo": 40, "prezzo_pieno": None, "opzioni": "2 opzioni: manicure CHF 40 oppure semipermanente piedi CHF 60"},
+            {"n": 2, "titolo": "Livello 2 – Consigliato", "servizi": "Manicure + semipermanente piedi", "prezzo": 95, "prezzo_pieno": 100, "opzioni": None},
+            {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "6 semipermanenti piedi", "prezzo": 324, "prezzo_pieno": 360, "opzioni": None},
         ],
         "faq": [{"d": "Quanto dura il semipermanente?", "r": "Di solito 3-4 settimane: con il percorso le sedute sono già programmate."}],
         "in_evidenza": True, "stagionale": "Giugno - agosto",

@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import FreshaButton from "@/components/FreshaButton";
-import { LISTINO } from "@/lib/content";
+import { LISTINO, FRESHA_URL } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
+
+const Prezzo = ({ prezzo }) => {
+  if (prezzo == null) return null;
+  if (prezzo === "gratuita") return <span className="font-semibold text-[#4c5c48]">Gratuita</span>;
+  if (typeof prezzo === "string") return <span className="font-semibold text-antracite">da CHF {prezzo.replace("da ", "")}</span>;
+  return <span className="font-semibold text-antracite">CHF {prezzo}</span>;
+};
 
 const Servizi = () => {
   const { percorsoByHandle } = useSite();
+  const totale = LISTINO.reduce((n, f) => n + f.voci.length, 0);
 
   return (
     <div data-testid="servizi-page" className="container-site py-16 lg:py-24">
@@ -16,11 +23,9 @@ const Servizi = () => {
           Tutti i servizi del centro
         </h1>
         <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground">
-          Il listino completo, raggruppato per famiglia. Ogni servizio si prenota su Fresha.
+          Il listino completo, con prezzi e durate come su Fresha. Ogni servizio si prenota online in un minuto.
         </p>
-        <div className="mt-4">
-          <Placeholder label="esportazione del listino Fresha completo (66 voci), senza refusi" />
-        </div>
+        <p className="mt-3 text-sm text-muted-foreground">{totale} servizi · prezzi aggiornati da Fresha</p>
       </Reveal>
 
       <div className="mt-14 space-y-12">
@@ -48,12 +53,16 @@ const Servizi = () => {
                         {v.durata && <p className="text-sm text-muted-foreground">{v.durata}</p>}
                       </div>
                       <div className="flex items-center gap-4">
-                        {v.prezzo != null ? (
-                          <span className="font-semibold text-antracite">CHF {v.prezzo}</span>
-                        ) : (
-                          <Placeholder label="prezzo dal listino Fresha" />
-                        )}
-                        <FreshaButton label="Prenota su Fresha" kind="fresha" testid={`servizi-fresha-${fi}-${vi}`} className="btn-secondary !min-h-[44px] !px-5 !py-2 text-sm" />
+                        <Prezzo prezzo={v.prezzo} />
+                        <a
+                          data-testid={`servizi-fresha-${fi}-${vi}`}
+                          href={FRESHA_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-secondary !min-h-[44px] !px-5 !py-2 text-sm"
+                        >
+                          Prenota su Fresha
+                        </a>
                       </div>
                     </div>
                   ))}
@@ -63,6 +72,12 @@ const Servizi = () => {
           );
         })}
       </div>
+
+      <Reveal>
+        <div className="mt-16 text-center">
+          <FreshaButton label="Prenota il tuo appuntamento su Fresha" testid="servizi-fresha-bottom" className="btn-primary" />
+        </div>
+      </Reveal>
     </div>
   );
 };

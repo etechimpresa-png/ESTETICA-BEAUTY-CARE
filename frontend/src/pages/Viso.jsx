@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import Placeholder from "@/components/Placeholder";
 import PercorsoCard from "@/components/PercorsoCard";
 import { METODO_ROSA, IMAGES } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
@@ -59,6 +60,26 @@ const Viso = () => {
             </p>
           </Reveal>
         </div>
+      </section>
+
+      <section className="container-site pb-16 lg:pb-20">
+        <Reveal>
+          <div className="rounded-[2rem] border border-border bg-carta p-8 lg:p-10">
+            <p className="eyebrow mb-3">In vendita in centro</p>
+            <h2 className="font-serif text-2xl font-semibold text-antracite sm:text-3xl">La linea alla rosa damascena</h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+              I prodotti naturali creati da Susana, gli stessi usati in cabina: latte, tonico, siero e crema alla rosa damascena. Per ora li trovi in centro; presto anche online.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {["Latte detergente", "Tonico", "Siero", "Crema viso"].map((nome) => (
+                <div key={nome} className="flex aspect-[3/4] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-amber-500/50 bg-crema p-4 text-center" data-testid={`prodotto-slot-${nome.toLowerCase().replace(/\s/g, "-")}`}>
+                  <Placeholder label={`foto ${nome} alla rosa damascena`} />
+                  <p className="text-sm font-medium text-muted-foreground">{nome}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       <section className="container-site py-16 lg:py-20">

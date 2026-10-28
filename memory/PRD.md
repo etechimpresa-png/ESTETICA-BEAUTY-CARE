@@ -31,6 +31,15 @@
 - Fase 3: quiz completo (pop-up auto dopo 2,5s, ?quiz=1, logica A+B, testate 352 combinazioni), pagina /risultato dinamica, messaggio WhatsApp precompilato, salvataggio lead, /admin con filtri + export CSV + interruttori.
 - Admin: susana@beautycare-losone.ch / BeautyCare2026! (test, da cambiare).
 
+## Implementato (28.10.2026)
+- Listino /servizi riscritto con 97 servizi reali estratti da Fresha (prezzi e durate), ogni riga con pulsante "Prenota su Fresha" collegato al listino prenotazioni del centro.
+- Prezzi percorsi allineati a Fresha dove il servizio base era diverso: Sguardo L1 CHF 20 (regolazione sopracciglia), L2 CHF 152; Mani e piedi L1 CHF 40, L2 CHF 95, L3 CHF 324; Corpo tonico L1 CHF 130 (radiofrequenza), L2 CHF 275, L3 CHF 783. DA CONFERMARE: laser-senza-pensieri (Fresha zona piccola da CHF 10 vs brief CHF 80) e "trattamento viso CHF 185" non presente su Fresha.
+- Attestati veri pubblicati su /susana (O-LRNIS pigmentazione 13.10.2025; laser+cellulite 18.11.2024) con data di nascita oscurata. Certificato RME NON pubblicato: scaduto 12.04.2026, in attesa di rinnovo (come da brief).
+- Paragrafo "storia di Susana" + elenco competenze su /susana.
+- Galleria lavori reali: Home (6 foto miste) e /corpo (8 collage prima/dopo corpo). Saltati 2 video .mov nello zip.
+- Spazi pronti: 4 slot linea prodotti rosa damascena su /viso; 3 slot foto negozio su /contatti.
+- Assets: /app/frontend/public/assets/attestati (3) e /assets/lavori (19, HEIC convertiti in JPG).
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

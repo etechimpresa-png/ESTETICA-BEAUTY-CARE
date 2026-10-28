@@ -1,3 +1,5 @@
+export const FRESHA_URL = "https://www.fresha.com/it/a/estetica-beauty-and-care-losone-via-locarno-58-jwl8ceyb/booking";
+
 export const IMAGES = {
   hero: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHxfHxzcGElMjB3ZWxsbmVzc3xlbnwwfHx8fDE3OTMwOTIwNzN8MA&ixlib=rb-4.1.0&q=85",
   rosaMacro: "https://images.unsplash.com/photo-1575543483595-568b7afb6b9e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxyb3NlJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzkzMDkyMDc0fDA&ixlib=rb-4.1.0&q=85",
@@ -29,25 +31,54 @@ export const METODO_ROSA = {
   nota: "Trattamenti che seguono il Metodo Rosa: Rituale Metodo Rosa e i percorsi Luminosità, Anti-age Metodo Rosa, Uniformità e Pelle pulita.",
 };
 
+export const SUSANA_STORIA = [
+  "Mi chiamo Susana e da 21 anni mi prendo cura della bellezza e del benessere delle persone. Nel mio centro di Losone ho scelto di specializzarmi nei trattamenti corpo, perché è lì che vedo i cambiamenti più profondi: clienti che tornano a sentirsi leggere, a piacersi, a prendersi tempo per sé.",
+  "Negli anni ho unito alle mani la tecnologia: pressoterapia, cavitazione, radiofrequenza e laser a diodo, sempre con gli attestati federali alla mano. E per il viso ho creato il Metodo Rosa, il mio modo di lavorare la pelle con la mia linea naturale alla rosa damascena. Sono anche Master Reiki: per me la cura passa anche dall'equilibrio.",
+];
+
+export const SUSANA_COMPETENZE = [
+  "Estetista da 21 anni",
+  "Specializzazione trattamenti corpo",
+  "Attestati federali O-LRNIS: laser, cellulite, pigmentazione",
+  "Master Reiki",
+  "Creatrice della linea alla rosa damascena",
+  "Registrazione RME (in corso di rinnovo)",
+];
+
 export const ATTESTATI = [
-  {
-    titolo: "Attestato di competenza O-LRNIS – Rimozione peli mediante laser",
-    ente: "AESI, Associazione Estetiste della Svizzera Italiana",
-    data: "18.11.2024",
-    pubblicato: true,
-  },
-  {
-    titolo: "Attestato di competenza O-LRNIS – Cellulite e cuscinetti adiposi",
-    ente: "AESI, Associazione Estetiste della Svizzera Italiana",
-    data: "18.11.2024",
-    pubblicato: true,
-  },
   {
     titolo: "Attestato di competenza O-LRNIS – Pelle e pigmentazione",
     ente: "AESI, Associazione Estetiste della Svizzera Italiana",
     data: "13.10.2025",
-    pubblicato: true,
+    img: "/assets/attestati/attestato-02.jpg",
   },
+  {
+    titolo: "Attestato di competenza O-LRNIS – Rimozione peli mediante laser e cellulite",
+    ente: "AESI, Associazione Estetiste della Svizzera Italiana",
+    data: "18.11.2024",
+    img: "/assets/attestati/attestato-03.jpg",
+  },
+];
+
+// Galleria lavori reali (foto caricate dal centro)
+export const LAVORI_CORPO = [
+  { img: "/assets/lavori/lavoro-10.jpg", didascalia: "Percorso corpo – dopo 10 trattamenti" },
+  { img: "/assets/lavori/lavoro-05.jpg", didascalia: "Percorso corpo – prima e dopo" },
+  { img: "/assets/lavori/lavoro-06.jpg", didascalia: "Percorso corpo – addome" },
+  { img: "/assets/lavori/lavoro-09.jpg", didascalia: "Percorso corpo – profilo" },
+  { img: "/assets/lavori/lavoro-14.jpg", didascalia: "Percorso corpo – prima e dopo" },
+  { img: "/assets/lavori/lavoro-17.jpg", didascalia: "Percorso corpo – il percorso nel tempo" },
+  { img: "/assets/lavori/lavoro-12.jpg", didascalia: "Percorso corpo – prima e dopo" },
+  { img: "/assets/lavori/lavoro-13.jpg", didascalia: "Percorso corpo – profilo" },
+];
+
+export const LAVORI_HOME = [
+  { img: "/assets/lavori/lavoro-10.jpg", didascalia: "Percorso corpo – dopo 10 trattamenti" },
+  { img: "/assets/lavori/lavoro-05.jpg", didascalia: "Percorso corpo" },
+  { img: "/assets/lavori/lavoro-14.jpg", didascalia: "Percorso corpo – addome" },
+  { img: "/assets/lavori/lavoro-01.jpg", didascalia: "Trucco permanente labbra" },
+  { img: "/assets/lavori/lavoro-19.jpg", didascalia: "Laminazione sopracciglia" },
+  { img: "/assets/lavori/lavoro-18.jpg", didascalia: "Sopracciglia – prima e dopo" },
 ];
 
 export const ORARI = [
@@ -63,100 +94,154 @@ export const ORARI = [
 export const GARANZIA =
   "Ogni percorso inizia con la consulenza inclusa. Se in consulenza emerge che il trattamento non è adatto a te, il valore pagato si converte in un altro percorso o in credito, oppure ti viene rimborsato.";
 
-// Listino: struttura per famiglie. Le voci con prezzo null mostrano il segnaposto [DA INSERIRE: listino Fresha].
+// Listino reale da Fresha (28.10.2026). Prezzi in CHF; "da X" dove Fresha indica "a partire da".
 export const LISTINO = [
   {
-    famiglia: "Trattamenti corpo manuali", percorso: "corpo-leggero",
+    famiglia: "Corpo: tecnologie e anticellulite", percorso: "corpo-leggero",
     voci: [
-      { nome: "Drenaggio linfatico a fini estetici", durata: null, prezzo: 110 },
-      { nome: "Trattamento anticellulite", durata: null, prezzo: 160 },
-      { nome: "Massaggio corpo", durata: null, prezzo: null },
+      { nome: "Anticellulite (cavitazione ultrasonica)", durata: "1 h 30", prezzo: 160 },
+      { nome: "Bendaggio e pressoterapia", durata: null, prezzo: 110 },
+      { nome: "Vacuum e pressoterapia", durata: null, prezzo: 115 },
+      { nome: "Pressoterapia", durata: null, prezzo: 60 },
+      { nome: "Vacuum", durata: null, prezzo: 120 },
+      { nome: "Stimolazione", durata: null, prezzo: 75 },
+      { nome: "Radiofrequenza, principio attivo, pressoterapia e rullo", durata: null, prezzo: 160 },
+      { nome: "Placche Triple Action", durata: null, prezzo: 130 },
+      { nome: "Riducente", durata: null, prezzo: 300 },
+      { nome: "Trattamento cryo diminuzione adipe", durata: null, prezzo: 300 },
+      { nome: "Criolipolisi (Cryolipo)", durata: null, prezzo: 400 },
+      { nome: "Pacchetto 4 trattamenti", durata: null, prezzo: 450 },
+      { nome: "Percorso 10 trattamenti riducente adipe", durata: null, prezzo: 2070 },
     ],
   },
   {
-    famiglia: "Tecnologie corpo", percorso: "corpo-tonico",
+    famiglia: "Massaggi e drenaggio", percorso: "pausa-benessere",
     voci: [
-      { nome: "Pressoterapia", durata: null, prezzo: null },
-      { nome: "Endosfer Endermologia", durata: null, prezzo: null },
-      { nome: "Cavitazione", durata: null, prezzo: 110 },
-      { nome: "Radiofrequenza corpo", durata: null, prezzo: 120 },
-      { nome: "Radiofrequenza Triple Action", durata: null, prezzo: null },
-      { nome: "Sauna Cocoon", durata: null, prezzo: null },
-    ],
-  },
-  {
-    famiglia: "Massaggi", percorso: "pausa-benessere",
-    voci: [
-      { nome: "Massaggio relax", durata: null, prezzo: 110 },
-      { nome: "Massaggio classico", durata: null, prezzo: null },
-      { nome: "Riflessologia plantare", durata: null, prezzo: null },
+      { nome: "Linfodrenaggio Vodder", durata: "1 h", prezzo: 110 },
+      { nome: "Massaggio classico", durata: "1 h", prezzo: 110 },
+      { nome: "Massaggio Relax corpo", durata: "1 h", prezzo: 110 },
+      { nome: "Massage hot ton", durata: "1 h", prezzo: 110 },
+      { nome: "Peeling e massaggio schiena", durata: "35 min", prezzo: 80 },
+      { nome: "Scrub e massaggio relax viso corpo", durata: "1 h", prezzo: 160 },
     ],
   },
   {
     famiglia: "Olistico", percorso: "equilibrio",
     voci: [
-      { nome: "Trattamento olistico (Reiki o suono)", durata: null, prezzo: 90 },
+      { nome: "Reiki", durata: null, prezzo: 110 },
+      { nome: "Reiki senza oli essenziali", durata: null, prezzo: 60 },
+      { nome: "Massaggio riequilibrio 7 chakra", durata: "1 h", prezzo: 110 },
+      { nome: "Corpo specchio", durata: null, prezzo: 150 },
     ],
   },
   {
     famiglia: "Epilazione laser a diodo", percorso: "laser-senza-pensieri",
     voci: [
-      { nome: "Zona piccola (a seduta)", durata: null, prezzo: 80 },
-      { nome: "Zona media (a seduta)", durata: null, prezzo: null },
-      { nome: "Zona grande (a seduta)", durata: null, prezzo: null },
-    ],
-  },
-  {
-    famiglia: "Epilazione a cera corpo", percorso: "liscia-tutto-l-anno",
-    voci: [
-      { nome: "Mezza gamba + bikini + ascelle", durata: null, prezzo: 85 },
-      { nome: "Gamba intera", durata: null, prezzo: null },
-    ],
-  },
-  {
-    famiglia: "Epilazione a cera viso", percorso: null,
-    voci: [
-      { nome: "Labbra / mento", durata: null, prezzo: null },
-      { nome: "Sopracciglia con cera", durata: null, prezzo: null },
-    ],
-  },
-  {
-    famiglia: "Pulizia e trattamenti viso", percorso: "luminosita",
-    voci: [
+      { nome: "Baffetti", durata: null, prezzo: 10 },
+      { nome: "Braccia", durata: null, prezzo: 25 },
+      { nome: "Ascelle", durata: null, prezzo: 70 },
+      { nome: "Mezza gamba", durata: null, prezzo: 150 },
+      { nome: "Gamba intera", durata: null, prezzo: 320 },
+      { nome: "Bikini", durata: null, prezzo: 59 },
+      { nome: "Intimo integrale", durata: null, prezzo: 120 },
       { nome: "Viso completo", durata: null, prezzo: 70 },
-      { nome: "Trattamento viso", durata: null, prezzo: 185 },
-      { nome: "Rituale Metodo Rosa", durata: null, prezzo: 175 },
+      { nome: "Petto", durata: null, prezzo: 100 },
+      { nome: "Schiena", durata: null, prezzo: 240 },
+      { nome: "Glutei", durata: null, prezzo: 25 },
+      { nome: "Ago elettrico", durata: null, prezzo: 40 },
     ],
   },
   {
-    famiglia: "Tecnologie viso", percorso: "anti-age-metodo-rosa",
+    famiglia: "Epilazione a cera brasiliana", percorso: "liscia-tutto-l-anno",
     voci: [
-      { nome: "Plasma freddo", durata: null, prezzo: null },
-      { nome: "Radiofrequenza viso", durata: null, prezzo: null },
+      { nome: "Mezza gamba", durata: null, prezzo: 45 },
+      { nome: "Gamba intera", durata: null, prezzo: 50 },
+      { nome: "Ascelle", durata: null, prezzo: 20 },
+      { nome: "Intimo parziale", durata: null, prezzo: 25 },
+      { nome: "Intimo integrale", durata: null, prezzo: 30 },
+      { nome: "Addome", durata: null, prezzo: 20 },
+      { nome: "Pancia", durata: null, prezzo: 30 },
+      { nome: "Braccia", durata: null, prezzo: 30 },
+      { nome: "Schiena", durata: null, prezzo: 40 },
+      { nome: "Petto e schiena", durata: null, prezzo: 65 },
+      { nome: "Regolazione ciglia", durata: null, prezzo: 14 },
+      { nome: "Epilazione varie", durata: null, prezzo: 150 },
+      { nome: "Programma gamba intera, viso sopracciglia, ascelle e intimo", durata: null, prezzo: "da 108" },
+    ],
+  },
+  {
+    famiglia: "Viso: pulizia e tecnologie", percorso: "luminosita",
+    voci: [
+      { nome: "Pulizia classica", durata: null, prezzo: 85 },
+      { nome: "Pulizia viso ultrasuono", durata: "1 h 15", prezzo: 130 },
+      { nome: "IdroFace", durata: null, prezzo: 130 },
+      { nome: "Ossigeno viso", durata: null, prezzo: 120 },
+      { nome: "Viso rigenerazione", durata: null, prezzo: 150 },
+      { nome: "Microneedling", durata: null, prezzo: 150 },
+      { nome: "Microdermoabrasione", durata: null, prezzo: 150 },
+      { nome: "Plasma freddo", durata: null, prezzo: 250 },
+      { nome: "Radiofrequenza viso", durata: null, prezzo: 130 },
+      { nome: "Carbon laser", durata: null, prezzo: 150 },
+      { nome: "Carbon peel laser yang", durata: null, prezzo: 140 },
+      { nome: "Anti età lifting non chirurgico", durata: null, prezzo: 450 },
+      { nome: "Biorivitalizzazione con acido ialuronico", durata: null, prezzo: "da 270" },
+      { nome: "Trattamento fless", durata: null, prezzo: 60 },
+      { nome: "Grano di miglio", durata: null, prezzo: 20 },
     ],
   },
   {
     famiglia: "Ciglia e sopracciglia", percorso: "sguardo",
     voci: [
-      { nome: "Laminazione ciglia", durata: null, prezzo: 110 },
-      { nome: "Regolazione sopracciglia", durata: null, prezzo: 30 },
-      { nome: "Laminazione sopracciglia", durata: null, prezzo: null },
-      { nome: "Microblading sopracciglia (ritocco incluso)", durata: null, prezzo: 450 },
+      { nome: "Laminazione ciglia", durata: "1 h", prezzo: 110 },
+      { nome: "Allungamento ciglia", durata: null, prezzo: 180 },
+      { nome: "Tintura ciglia", durata: "15 min", prezzo: 25 },
+      { nome: "Colore ciglia", durata: null, prezzo: 25 },
+      { nome: "Laminazione sopracciglia", durata: null, prezzo: 50 },
+      { nome: "Colore sopracciglia", durata: null, prezzo: 20 },
+      { nome: "Regolazione sopracciglia", durata: null, prezzo: 20 },
     ],
   },
   {
-    famiglia: "Trucco semipermanente", percorso: null,
-    voci: [{ nome: "Trucco permanente / semipermanente", durata: null, prezzo: null }],
+    famiglia: "Trucco permanente e trucco", percorso: "sguardo",
+    voci: [
+      { nome: "Microblading sopracciglia", durata: "2 h 45", prezzo: "da 450" },
+      { nome: "Labbra", durata: "2 h 30", prezzo: "da 450" },
+      { nome: "Eyeliner", durata: null, prezzo: 300 },
+      { nome: "Infraciliare", durata: null, prezzo: 250 },
+      { nome: "Ciglia sfumatura", durata: null, prezzo: 500 },
+      { nome: "Ripasso (entro l'anno)", durata: null, prezzo: 100 },
+      { nome: "Ritocco sopracciglia dopo un anno", durata: null, prezzo: 300 },
+      { nome: "Ripasso occhi dopo 3 settimane", durata: null, prezzo: 50 },
+      { nome: "Ripasso dopo 3-4 settimane", durata: null, prezzo: 250 },
+      { nome: "Trucco sposa", durata: null, prezzo: 300 },
+      { nome: "Trucco giorno", durata: null, prezzo: 40 },
+    ],
   },
   {
     famiglia: "Mani e piedi", percorso: "mani-e-piedi",
     voci: [
-      { nome: "Manicure", durata: null, prezzo: 75 },
-      { nome: "Semipermanente piedi", durata: null, prezzo: 80 },
+      { nome: "Manicure", durata: null, prezzo: 40 },
+      { nome: "Manicure spa", durata: null, prezzo: 50 },
+      { nome: "Manicure semipermanente", durata: null, prezzo: 55 },
+      { nome: "Applicazione semipermanente", durata: null, prezzo: 30 },
+      { nome: "Applicazione solo smalto", durata: null, prezzo: 20 },
+      { nome: "Riparazione unghie", durata: null, prezzo: 10 },
+      { nome: "Decorazione unghia", durata: null, prezzo: 8 },
+      { nome: "Ricostruzione gel", durata: "1 h 30", prezzo: 120 },
+      { nome: "Riempimento gel (entro 30 giorni)", durata: "1 h 30", prezzo: 75 },
+      { nome: "Gel refill studente", durata: null, prezzo: 60 },
+      { nome: "Pedicure estetica", durata: "1 h", prezzo: 60 },
+      { nome: "Pedicure curativa spa", durata: "1 h", prezzo: 80 },
+      { nome: "Pedicure semipermanente", durata: "1 h", prezzo: 80 },
+      { nome: "Semipermanente piedi senza pedicure", durata: null, prezzo: 60 },
     ],
   },
   {
-    famiglia: "Servizi su richiesta", percorso: null,
-    voci: [{ nome: "Trattamenti su richiesta", durata: null, prezzo: null }],
+    famiglia: "Abbronzatura", percorso: null,
+    voci: [{ nome: "Abbronzatura spray", durata: "15 min", prezzo: 40 }],
+  },
+  {
+    famiglia: "Consulenza", percorso: null,
+    voci: [{ nome: "Consulenza con Susana", durata: null, prezzo: "gratuita" }],
   },
 ];

@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import PercorsoCard from "@/components/PercorsoCard";
 import FreshaButton from "@/components/FreshaButton";
-import { IMAGES, TECNOLOGIE_CORPO, ORARI } from "@/lib/content";
+import { IMAGES, TECNOLOGIE_CORPO, ORARI, LAVORI_HOME } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 
 const HeroLine = ({ children, delay }) => (
@@ -212,6 +212,27 @@ const Home = () => {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* GALLERIA LAVORI REALI */}
+      <section className="container-site py-20 lg:py-24">
+        <Reveal>
+          <p className="eyebrow mb-3">I lavori del centro</p>
+          <h2 className="font-serif text-3xl font-semibold text-antracite sm:text-4xl">Risultati veri, fotografati in cabina</h2>
+          <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
+            Prima e dopo reali dei percorsi corpo, del trucco permanente e dei trattamenti sguardo, pubblicati con il consenso delle clienti.
+          </p>
+        </Reveal>
+        <div className="mt-9 grid grid-cols-2 gap-4 lg:grid-cols-3">
+          {LAVORI_HOME.map((l, i) => (
+            <Reveal key={l.img} delay={i * 0.06}>
+              <figure className="group overflow-hidden rounded-2xl border border-border bg-carta shadow-sm" data-testid={`lavoro-home-${i}`}>
+                <img src={l.img} alt={l.didascalia} className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                <figcaption className="px-4 py-3 text-sm font-medium text-muted-foreground">{l.didascalia}</figcaption>
+              </figure>
+            </Reveal>
+          ))}
         </div>
       </section>
 

@@ -20,6 +20,16 @@ const Contatti = () => {
       <div className="mt-12 grid gap-10 lg:grid-cols-2">
         <Reveal className="space-y-8">
           <div>
+            <h2 className="font-serif text-xl font-semibold text-antracite">Il centro</h2>
+            <div className="mt-4 grid grid-cols-3 gap-3">
+              {["ingresso", "cabina", "accoglienza"].map((slot) => (
+                <div key={slot} className="flex aspect-[3/4] items-center justify-center rounded-2xl border border-dashed border-amber-500/50 bg-elevato p-3 text-center" data-testid={`centro-foto-slot-${slot}`}>
+                  <Placeholder label={`foto del negozio: ${slot}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
             <h2 className="flex items-center gap-2 font-serif text-xl font-semibold text-antracite"><MapPin size={19} className="text-rosa" /> Indirizzo</h2>
             <p className="mt-2 text-lg text-antracite">Estetica Beauty &amp; Care<br />Via Locarno 58, 6616 Losone (TI)</p>
             <p className="mt-2 text-[15px] text-muted-foreground">Parcheggio: <Placeholder label="info parcheggio" /></p>

@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
-import { IMAGES } from "@/lib/content";
+import { IMAGES, LAVORI_CORPO } from "@/lib/content";
 
 const SEZIONI = [
   {
@@ -103,6 +103,24 @@ const Corpo = () => {
             </article>
           </Reveal>
         ))}
+
+        {/* PRIMA E DOPO */}
+        <Reveal>
+          <div className="rounded-[2rem] border border-border bg-carta p-8 lg:p-12">
+            <h2 className="font-serif text-2xl font-semibold text-antracite sm:text-3xl">Prima e dopo: i risultati dei percorsi corpo</h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+              Foto reali fatte in cabina, pubblicate con il consenso delle clienti. Ogni corpo è diverso: i tempi e i risultati si valutano in consulenza.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {LAVORI_CORPO.map((l, i) => (
+                <figure key={l.img} className="group overflow-hidden rounded-2xl border border-border" data-testid={`corpo-lavoro-${i}`}>
+                  <img src={l.img} alt={l.didascalia} className="aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                  <figcaption className="px-3 py-2.5 text-xs font-medium text-muted-foreground">{l.didascalia}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </Reveal>
 
         {settings.rme_valido && (
           <Reveal>

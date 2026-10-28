@@ -1,6 +1,6 @@
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
-import { ATTESTATI, METODO_ROSA } from "@/lib/content";
+import { ATTESTATI, METODO_ROSA, SUSANA_STORIA, SUSANA_COMPETENZE } from "@/lib/content";
 import { BadgeCheck } from "lucide-react";
 
 const Susana = () => (
@@ -18,10 +18,17 @@ const Susana = () => (
             Susana · Skin Expert Metodo Rosa
           </h1>
           <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
-            <p>
-              Estetista da 21 anni, specializzata nei trattamenti corpo. Nel mio centro di Losone unisco tecnologie certificate e una linea naturale di prodotti alla rosa damascena, creata da me.
-            </p>
-            <Placeholder label="testo approvato da Susana sulla sua storia (versione lunga)" />
+            {SUSANA_STORIA.map((p, i) => <p key={i}>{p}</p>)}
+          </div>
+          <div className="mt-7 flex flex-wrap gap-2.5">
+            {SUSANA_COMPETENZE.map((c) => (
+              <span key={c} className="rounded-full border border-border bg-carta px-4 py-2 text-sm font-medium text-antracite" data-testid="susana-competenza">
+                {c}
+              </span>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Placeholder label="storia personale completa raccontata da Susana (la aggiungiamo qui)" />
           </div>
         </Reveal>
       </div>
@@ -54,10 +61,10 @@ const Susana = () => (
       <Reveal>
         <h2 className="font-serif text-3xl font-semibold text-antracite">Attestati e certificazioni</h2>
         <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
-          Dal 2024 la legge federale richiede un attestato specifico per i trattamenti con laser e apparecchi. Qui trovi tutti i miei titoli: perché la tua sicurezza viene prima di tutto.
+          Dal 2024 la legge federale richiede un attestato specifico per i trattamenti con laser e apparecchi. Ecco i miei titoli: perché la tua sicurezza viene prima di tutto.
         </p>
       </Reveal>
-      <div className="mt-9 grid gap-5 md:grid-cols-3">
+      <div className="mt-9 grid gap-5 md:grid-cols-2">
         {ATTESTATI.map((a, i) => (
           <Reveal key={a.titolo} delay={i * 0.1}>
             <div className="flex h-full flex-col rounded-3xl border border-border bg-carta p-7 shadow-sm" data-testid={`attestato-card-${i}`}>
@@ -65,16 +72,17 @@ const Susana = () => (
               <h3 className="mt-4 font-serif text-lg font-semibold leading-snug text-antracite">{a.titolo}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{a.ente}</p>
               <p className="mt-1 text-sm font-medium text-antracite">{a.data}</p>
-              <div className="mt-4 flex flex-1 items-center justify-center rounded-2xl border border-dashed border-amber-500/50 bg-crema p-6">
-                <Placeholder label={`scansione del documento (dati personali oscurati) – ${a.titolo.slice(0, 40)}…`} />
-              </div>
+              <a href={a.img} target="_blank" rel="noopener noreferrer" className="mt-4 block overflow-hidden rounded-2xl border border-border" data-testid={`attestato-img-${i}`}>
+                <img src={a.img} alt={`${a.titolo} – documento originale`} className="max-h-80 w-full object-cover object-top transition-transform duration-500 hover:scale-[1.02]" loading="lazy" />
+              </a>
+              <p className="mt-2 text-xs text-muted-foreground">Documento originale · dati anagrafici oscurati per privacy</p>
             </div>
           </Reveal>
         ))}
       </div>
       <Reveal>
         <p className="mt-8 max-w-2xl text-sm text-muted-foreground">
-          Altri titoli (registrazione RME, Master Reiki, autorizzazioni cantonali) saranno pubblicati qui dopo la verifica e il rinnovo dei documenti.
+          La registrazione RME (rimborso casse malati complementari) è in corso di rinnovo e verrà pubblicata qui appena aggiornata, insieme agli altri titoli in verifica (Master Reiki, autorizzazioni cantonali).
         </p>
       </Reveal>
     </section>
