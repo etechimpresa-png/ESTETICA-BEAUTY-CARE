@@ -49,6 +49,9 @@
 - DECISIONE UTENTE: i percorsi NON si vendono via Shopify per ora — ogni livello di ogni percorso ha il pulsante "Prenota su Fresha" collegato al listino prenotazioni del centro. Testo "Come funziona" aggiornato (prenotazione, non acquisto online). Codice QUIZ10 applicato alla prima prenotazione in centro.
 - Foto prodotti sostituite con le 4 foto professionali caricate dall'utente (/assets/centro/prod-linea-01..04.jpg) su /viso e nel blocco Metodo Rosa della Home.
 
+## Foto cabina (28.10.2026, quarta passata)
+- 4 foto cabina caricate dall'utente (/assets/centro/cabina-*.jpg, zona-pedicure.jpg): hero Home (cabina trattamenti), hero Corpo (cabina con macchinario), hero Viso (cabina viso), galleria "Il centro" su Contatti (4 reali + 1 placeholder ingresso rimasto).
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

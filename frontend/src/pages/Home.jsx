@@ -79,8 +79,8 @@ const Home = () => {
           >
             <div className="relative overflow-hidden rounded-[2rem] shadow-xl" style={{ aspectRatio: "4/5" }}>
               <motion.img
-                src={IMAGES.hero}
-                alt="Cabina di trattamento del centro estetico – foto segnaposto in attesa dello shooting"
+                src="/assets/centro/cabina-trattamenti.jpg"
+                alt="La cabina trattamenti del centro Beauty & Care a Losone"
                 className="h-full w-full scale-110 object-cover"
                 style={{ y: imgY }}
               />
@@ -88,9 +88,6 @@ const Home = () => {
             <div className="absolute -bottom-5 left-5 rounded-2xl border border-border bg-carta/95 px-5 py-3 shadow-lg backdrop-blur">
               <p className="font-serif text-lg font-semibold text-antracite">Susana · Skin Expert</p>
               <p className="text-xs uppercase tracking-[0.25em] text-rosa">Metodo Rosa</p>
-            </div>
-            <div className="absolute right-4 top-4">
-              <Placeholder label="foto del centro (giornata di shooting)" />
             </div>
           </motion.div>
         </div>

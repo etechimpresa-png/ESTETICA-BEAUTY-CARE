@@ -57,7 +57,7 @@ const Corpo = () => {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="relative overflow-hidden rounded-[2rem] shadow-lg" style={{ aspectRatio: "4/3" }}>
-              <img src={IMAGES.massaggio} alt="Trattamento corpo in cabina – foto segnaposto" className="h-full w-full object-cover" loading="lazy" />
+              <img src={IMAGES.massaggio} alt="Cabina corpo del centro con macchinario per i trattamenti" className="h-full w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
         </div>

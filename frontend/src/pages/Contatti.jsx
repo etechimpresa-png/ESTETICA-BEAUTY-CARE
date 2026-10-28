@@ -25,11 +25,18 @@ const Contatti = () => {
               <figure className="overflow-hidden rounded-2xl border border-border" data-testid="centro-foto-accoglienza">
                 <img src={IMAGES.ricezione} alt="L'accoglienza del centro Beauty & Care a Losone" className="aspect-[3/4] h-full w-full object-cover" loading="lazy" />
               </figure>
-              {["ingresso", "cabina"].map((slot) => (
-                <div key={slot} className="flex aspect-[3/4] items-center justify-center rounded-2xl border border-dashed border-amber-500/50 bg-elevato p-3 text-center" data-testid={`centro-foto-slot-${slot}`}>
-                  <Placeholder label={`foto del negozio: ${slot}`} />
-                </div>
-              ))}
+              <figure className="overflow-hidden rounded-2xl border border-border" data-testid="centro-foto-cabina">
+                <img src={IMAGES.cabina} alt="La cabina trattamenti del centro" className="aspect-[3/4] h-full w-full object-cover" loading="lazy" />
+              </figure>
+              <figure className="overflow-hidden rounded-2xl border border-border" data-testid="centro-foto-cabina-viso">
+                <img src={IMAGES.viso} alt="La cabina viso con parete floreale" className="aspect-[3/4] h-full w-full object-cover" loading="lazy" />
+              </figure>
+              <figure className="overflow-hidden rounded-2xl border border-border" data-testid="centro-foto-pedicure">
+                <img src={IMAGES.pedicure} alt="La zona manicure e pedicure" className="aspect-[3/4] h-full w-full object-cover" loading="lazy" />
+              </figure>
+              <div className="flex aspect-[3/4] items-center justify-center rounded-2xl border border-dashed border-amber-500/50 bg-elevato p-3 text-center" data-testid="centro-foto-slot-ingresso">
+                <Placeholder label="foto del negozio: ingresso" />
+              </div>
             </div>
           </div>
           <div>
