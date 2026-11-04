@@ -65,6 +65,10 @@
 - BRAND: colore d'accento cambiato da rosa antico #B86A75 a teal/menta #58998B (soft #DFF0EC) su tutto il sito, logo e favicon, su richiesta della titolare (colore volantino Christmas Gift Experience).
 - Hero Home: foto reale di Susana (chi-siamo.webp); la foto cabina-trattamenti è spostata nella sezione "Dove siamo" sopra la mappa.
 
+## Evento Natale + recensioni (04.11.2026)
+- Pagina /evento-natale (e alias /open-day): "Christmas Gift Experience", venerdì 27 novembre ore 17:30, Golf Ascona; aperitivo offerto + omaggio; form conferma presenza (nome, telefono, n. persone, messaggio, consenso) → POST /api/event-rsvps; riepilogo in /admin con totale iscritti e persone; banner in home attivato via interruttore open_day_attivo (ora ON).
+- Recensioni Google: scraping bloccato da CAPTCHA Google — in attesa che l'utente incolli 3-5 testi di recensioni autorizzate (segnaposto ancora presenti in home).
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

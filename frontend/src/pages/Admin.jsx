@@ -6,7 +6,7 @@ import { useSite } from "@/lib/siteContext";
 const FLAGS = [
   ["shop_prodotti_attivo", "Shop prodotti"],
   ["formazione_attiva", "Formazione"],
-  ["open_day_attivo", "Open Day"],
+  ["open_day_attivo", "Evento Natale / Open Day"],
   ["pagamento_rate_attivo", "Pagamento a rate"],
   ["banner_buoni_regalo_attivo", "Banner buoni regalo"],
   ["sconto_quiz_attivo", "Sconto quiz (QUIZ10)"],
@@ -20,10 +20,14 @@ const Admin = () => {
   const [leads, setLeads] = useState(null);
   const [filtro, setFiltro] = useState("");
   const [stats, setStats] = useState(null);
+  const [rsvps, setRsvps] = useState(null);
 
   const load = (t, f) => adminGetLeads(t, f || undefined).then((d) => setLeads(d.leads)).catch(() => setError("Sessione scaduta, accedi di nuovo."));
 
   useEffect(() => { if (token) { load(token, filtro); adminGetStats(token).then(setStats).catch(() => {}); } }, [token, filtro]);
+  useEffect(() => {
+    if (token) api.get("/event-rsvps", { headers: { Authorization: `Bearer ${token}` } }).then((r) => setRsvps(r.data)).catch(() => {});
+  }, [token]);
 
   const doLogin = async (e) => {
     e.preventDefault();
@@ -119,6 +123,40 @@ const Admin = () => {
               </ul>
             </div>
           )}
+        </div>
+      )}
+
+      {rsvps && (
+        <div className="mt-8" data-testid="admin-rsvps">
+          <h2 className="font-serif text-xl font-semibold text-antracite">Iscrizioni evento — Christmas Gift Experience (27 nov)</h2>
+          <p className="mt-1 text-sm text-muted-foreground">{rsvps.totale_iscrizioni} iscrizioni · {rsvps.totale_persone} persone in totale</p>
+          <div className="mt-4 overflow-x-auto rounded-3xl border border-border bg-carta">
+            <table className="w-full min-w-[640px] text-left text-[15px]">
+              <thead>
+                <tr className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground">
+                  <th className="px-5 py-3">Data</th>
+                  <th className="px-5 py-3">Nome</th>
+                  <th className="px-5 py-3">Telefono</th>
+                  <th className="px-5 py-3">Persone</th>
+                  <th className="px-5 py-3">Messaggio</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rsvps.rsvps.map((r, i) => (
+                  <tr key={i} className="border-b border-border/60 last:border-0" data-testid={`admin-rsvp-row-${i}`}>
+                    <td className="px-5 py-3 text-muted-foreground">{r.created_at ? new Date(r.created_at).toLocaleString("it-CH") : ""}</td>
+                    <td className="px-5 py-3 font-medium text-antracite">{r.nome}</td>
+                    <td className="px-5 py-3">{r.telefono}</td>
+                    <td className="px-5 py-3">{r.persone}</td>
+                    <td className="px-5 py-3 text-muted-foreground">{r.messaggio || "–"}</td>
+                  </tr>
+                ))}
+                {rsvps.rsvps.length === 0 && (
+                  <tr><td colSpan={5} className="px-5 py-8 text-center text-muted-foreground">Nessuna iscrizione per ora.</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
 

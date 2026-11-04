@@ -111,6 +111,26 @@ const Home = () => {
         </div>
       </div>
 
+      {/* BANNER EVENTO NATALE */}
+      {settings.open_day_attivo && (
+        <section className="container-site pt-16">
+          <Reveal>
+            <Link to="/evento-natale" data-testid="home-evento-banner" className="group block overflow-hidden rounded-[2rem] shadow-md transition-shadow hover:shadow-xl" style={{ background: "linear-gradient(120deg, #C4E5DD 0%, #DFF0EA 100%)" }}>
+              <div className="flex flex-col items-start justify-between gap-5 p-9 sm:flex-row sm:items-center">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#3f5c57]">Evento · Venerdì 27 novembre, ore 17:30 · Golf Ascona</p>
+                  <h2 className="mt-2 font-serif text-2xl font-semibold text-[#22312e] sm:text-3xl">Christmas Gift Experience</h2>
+                  <p className="mt-1.5 text-[15px] text-[#3f5c57]">Aperitivo offerto e omaggio speciale per tutte le partecipanti.</p>
+                </div>
+                <span className="inline-flex min-h-[52px] shrink-0 items-center gap-2 rounded-full bg-[#22312e] px-7 text-base font-semibold text-[#DFF0EA] transition-transform duration-300 group-hover:-translate-y-0.5">
+                  Conferma la tua presenza <ArrowRight size={17} />
+                </span>
+              </div>
+            </Link>
+          </Reveal>
+        </section>
+      )}
+
       {/* IN EVIDENZA */}
       {evidenza.length > 0 && (
         <section className="container-site py-20 lg:py-24">

@@ -19,6 +19,7 @@ import Risultato from "@/pages/Risultato";
 import Grazie from "@/pages/Grazie";
 import Legale from "@/pages/Legale";
 import Admin from "@/pages/Admin";
+import EventoNatale from "@/pages/EventoNatale";
 import ComingSoon from "@/pages/ComingSoon";
 
 const ScrollManager = () => {
@@ -58,7 +59,8 @@ function App() {
             <Route path="/grazie" element={<Grazie />} />
             <Route path="/prodotti" element={<ComingSoon titolo="Prodotti alla rosa damascena" testo="La linea di prodotti che Susana usa in cabina, presto disponibile anche online. Per ora la trovi in centro." />} />
             <Route path="/formazione" element={<ComingSoon titolo="Formazione" testo="Le masterclass di Susana sono in preparazione. Torna a trovarci." />} />
-            <Route path="/open-day" element={<ComingSoon titolo="Open Day" testo="Il prossimo Open Day del centro sarà annunciato qui." />} />
+            <Route path="/open-day" element={<EventoNatale />} />
+            <Route path="/evento-natale" element={<EventoNatale />} />
             <Route path="/privacy" element={<Legale tipo="privacy" />} />
             <Route path="/condizioni" element={<Legale tipo="condizioni" />} />
             <Route path="/cookie" element={<Legale tipo="cookie" />} />

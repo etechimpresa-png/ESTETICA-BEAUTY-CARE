@@ -183,6 +183,37 @@ async def export_quiz_leads(admin=Depends(require_admin)):
     return StreamingResponse(iter([output.getvalue()]), media_type="text/csv", headers={"Content-Disposition": "attachment; filename=contatti-quiz.csv"})
 
 
+# ---------- Iscrizioni evento (Christmas Gift Experience) ----------
+
+
+class EventRsvp(BaseModel):
+    nome: str
+    telefono: str
+    persone: int = 1
+    messaggio: Optional[str] = None
+    consenso: bool
+
+
+@api_router.post("/event-rsvps")
+async def create_event_rsvp(rsvp: EventRsvp):
+    if not rsvp.consenso:
+        raise HTTPException(status_code=422, detail="Consenso al contatto obbligatorio")
+    if rsvp.persone < 1 or rsvp.persone > 10:
+        raise HTTPException(status_code=422, detail="Numero di persone non valido")
+    doc = rsvp.model_dump()
+    doc["evento"] = "christmas-gift-experience-2026"
+    doc["created_at"] = datetime.now(timezone.utc).isoformat()
+    await db.event_rsvps.insert_one(doc)
+    return {"ok": True}
+
+
+@api_router.get("/event-rsvps")
+async def list_event_rsvps(admin=Depends(require_admin)):
+    rsvps = await db.event_rsvps.find({}, {"_id": 0}).sort("created_at", -1).to_list(2000)
+    totale_persone = sum(r.get("persone", 1) for r in rsvps)
+    return {"rsvps": rsvps, "totale_iscrizioni": len(rsvps), "totale_persone": totale_persone}
+
+
 # ---------- Statistiche leggere (privacy-friendly, senza cookie) ----------
 
 ALLOWED_EVENTS = {"pageview", "quiz_start", "quiz_submit", "whatsapp_click", "fresha_click"}
