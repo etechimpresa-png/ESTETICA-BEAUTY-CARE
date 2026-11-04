@@ -79,9 +79,9 @@ const Home = () => {
           >
             <div className="relative overflow-hidden rounded-[2rem] shadow-xl" style={{ aspectRatio: "4/5" }}>
               <motion.img
-                src="/assets/centro/cabina-trattamenti.jpg"
-                alt="La cabina trattamenti del centro Beauty & Care a Losone"
-                className="h-full w-full scale-110 object-cover"
+                src={IMAGES.susana}
+                alt="Susana, titolare del centro Beauty & Care di Losone, nella sua cabina"
+                className="h-full w-full scale-110 object-cover object-top"
                 style={{ y: imgY }}
               />
             </div>
@@ -308,13 +308,23 @@ const Home = () => {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="h-full min-h-[340px] overflow-hidden rounded-[2rem] border border-border shadow-sm">
-              <iframe
-                title="Mappa: Estetica Beauty & Care, Via Locarno 58, Losone"
-                src="https://www.google.com/maps?q=Via%20Locarno%2058%2C%206616%20Losone%2C%20Svizzera&output=embed"
-                className="h-full min-h-[340px] w-full"
-                loading="lazy"
-              />
+            <div className="space-y-5">
+              <div className="overflow-hidden rounded-[2rem] border border-border shadow-sm">
+                <img
+                  src="/assets/centro/cabina-trattamenti.jpg"
+                  alt="La cabina trattamenti del centro Beauty & Care a Losone"
+                  className="h-56 w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="overflow-hidden rounded-[2rem] border border-border shadow-sm">
+                <iframe
+                  title="Mappa: Estetica Beauty & Care, Via Locarno 58, Losone"
+                  src="https://www.google.com/maps?q=Via%20Locarno%2058%2C%206616%20Losone%2C%20Svizzera&output=embed"
+                  className="h-[300px] w-full"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </Reveal>
         </div>

@@ -63,6 +63,7 @@
 - RME attivato (rme_valido=true): blocco rimborso casse malati visibile su /corpo; competenza aggiornata su /susana.
 - Barra di ricerca sul listino /servizi (filtra per parola chiave, conteggio risultati, stato vuoto).
 - BRAND: colore d'accento cambiato da rosa antico #B86A75 a teal/menta #58998B (soft #DFF0EC) su tutto il sito, logo e favicon, su richiesta della titolare (colore volantino Christmas Gift Experience).
+- Hero Home: foto reale di Susana (chi-siamo.webp); la foto cabina-trattamenti è spostata nella sezione "Dove siamo" sopra la mappa.
 
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
