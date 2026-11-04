@@ -128,7 +128,7 @@ const Admin = () => {
           {FLAGS.map(([key, label]) => (
             <label key={key} className="flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-border bg-crema px-4 py-3">
               <span className="text-[15px] font-medium text-antracite">{label}</span>
-              <input type="checkbox" data-testid={`admin-flag-${key}`} checked={!!settings[key]} onChange={() => toggle(key)} className="h-5 w-5 accent-[#B86A75]" />
+              <input type="checkbox" data-testid={`admin-flag-${key}`} checked={!!settings[key]} onChange={() => toggle(key)} className="h-5 w-5 accent-[#58998B]" />
             </label>
           ))}
         </div>
