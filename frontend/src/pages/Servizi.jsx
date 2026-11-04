@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Search } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import FreshaButton from "@/components/FreshaButton";
 import { LISTINO, FRESHA_URL } from "@/lib/content";
@@ -14,7 +16,13 @@ const Prezzo = ({ prezzo }) => {
 
 const Servizi = () => {
   const { percorsoByHandle } = useSite();
+  const [cerca, setCerca] = useState("");
   const totale = LISTINO.reduce((n, f) => n + f.voci.length, 0);
+  const q = cerca.trim().toLowerCase();
+  const listinoFiltrato = LISTINO
+    .map((f) => ({ ...f, voci: f.voci.filter((v) => !q || v.nome.toLowerCase().includes(q) || f.famiglia.toLowerCase().includes(q)) }))
+    .filter((f) => f.voci.length > 0);
+  const risultati = listinoFiltrato.reduce((n, f) => n + f.voci.length, 0);
 
   return (
     <div data-testid="servizi-page" className="container-site py-16 lg:py-24">
@@ -26,11 +34,25 @@ const Servizi = () => {
         <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground">
           Il listino completo, con prezzi e durate come su Fresha. Ogni servizio si prenota online in un minuto.
         </p>
-        <p className="mt-3 text-sm text-muted-foreground">{totale} servizi · prezzi aggiornati da Fresha</p>
+        <div className="relative mt-7 max-w-xl">
+          <Search size={20} className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          <input
+            data-testid="servizi-search-input"
+            type="search"
+            value={cerca}
+            onChange={(e) => setCerca(e.target.value)}
+            placeholder="Cerca un trattamento… es. pressoterapia, laminazione, laser"
+            className="min-h-[56px] w-full rounded-full border border-input bg-carta pl-13 pr-5 text-[17px] text-antracite shadow-sm outline-none transition-colors focus:border-rosa"
+            style={{ paddingLeft: "3.2rem" }}
+          />
+        </div>
+        <p className="mt-3 text-sm text-muted-foreground">
+          {q ? `${risultati} risultat${risultati === 1 ? "o" : "i"} per “${cerca}”` : `${totale} servizi · prezzi aggiornati da Fresha`}
+        </p>
       </Reveal>
 
       <div className="mt-14 space-y-12">
-        {LISTINO.map((fam, fi) => {
+        {listinoFiltrato.map((fam, fi) => {
           const percorso = fam.percorso ? percorsoByHandle(fam.percorso) : null;
           return (
             <Reveal key={fam.famiglia}>
@@ -73,6 +95,11 @@ const Servizi = () => {
             </Reveal>
           );
         })}
+        {listinoFiltrato.length === 0 && (
+          <p data-testid="servizi-no-results" className="rounded-3xl border border-border bg-carta p-10 text-center text-muted-foreground">
+            Nessun trattamento trovato per “{cerca}”. Prova con un'altra parola o scrivici: ti aiutiamo noi.
+          </p>
+        )}
       </div>
 
       <Reveal>

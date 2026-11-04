@@ -310,7 +310,7 @@ const QuizModal = () => {
                           data-testid="quiz-consenso-checkbox"
                           checked={form.consenso}
                           onChange={(e) => setForm({ ...form, consenso: e.target.checked })}
-                          className="mt-1 h-5 w-5 accent-[#B86A75]"
+                          className="mt-1 h-5 w-5 accent-[#58998B]"
                         />
                         <span className="text-[15px] leading-snug text-antracite">
                           Accetto che Beauty &amp; Care mi contatti su WhatsApp in merito alla mia richiesta.{" "}
@@ -323,7 +323,7 @@ const QuizModal = () => {
                           data-testid="quiz-marketing-checkbox"
                           checked={form.marketing}
                           onChange={(e) => setForm({ ...form, marketing: e.target.checked })}
-                          className="mt-1 h-5 w-5 accent-[#B86A75]"
+                          className="mt-1 h-5 w-5 accent-[#58998B]"
                         />
                         <span className="text-[15px] leading-snug text-muted-foreground">
                           Voglio ricevere consigli e novità dal centro su WhatsApp. (facoltativo)

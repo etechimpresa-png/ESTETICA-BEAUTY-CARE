@@ -114,6 +114,39 @@ const PercorsoDetail = () => {
         </div>
       </Reveal>
 
+      {p.protocolli && (
+        <Reveal>
+          <div className="mt-16 rounded-[2rem] border border-salvia/40 bg-salvia-soft/60 p-8 lg:p-10" data-testid="protocolli-benessere">
+            <h2 className="font-serif text-2xl font-semibold text-antracite sm:text-3xl">{p.protocolli.titolo}</h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-antracite/80">{p.protocolli.intro}</p>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {p.protocolli.elenco.map((pr, i) => (
+                <div key={pr.nome} className="flex h-full flex-col rounded-3xl border border-border bg-carta p-7 shadow-sm" data-testid={`protocollo-${i}`}>
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="font-serif text-xl font-semibold text-antracite">{pr.nome}</h3>
+                    <span className="rounded-full bg-elevato px-3 py-1 text-xs font-semibold text-antracite">{pr.durata}</span>
+                  </div>
+                  <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">{pr.composizione}</p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-antracite/85"><strong>Obiettivo:</strong> {pr.obiettivo}</p>
+                  <p className="mt-2 text-sm text-muted-foreground"><strong>Frequenza consigliata:</strong> {pr.frequenza}</p>
+                  <div className="mt-5 flex-1" />
+                  <span className="font-serif text-2xl font-semibold text-antracite">CHF {pr.prezzo}</span>
+                  <a
+                    data-testid={`protocollo-${i}-prenota-btn`}
+                    href={FRESHA_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary mt-4 w-full"
+                  >
+                    <CalendarCheck size={17} /> Prenota su Fresha
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      )}
+
       {p.faq?.length > 0 && (
         <Reveal>
           <div className="mt-12 max-w-3xl">

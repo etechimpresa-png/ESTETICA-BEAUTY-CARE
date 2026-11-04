@@ -52,9 +52,9 @@ module.exports = {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         rosa: {
-          DEFAULT: '#B86A75',
-          hover: '#A35964',
-          soft: '#F3E4E6',
+          DEFAULT: '#58998B',
+          hover: '#4A887B',
+          soft: '#DFF0EC',
         },
         salvia: {
           DEFAULT: '#8A9A85',

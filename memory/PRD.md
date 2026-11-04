@@ -57,6 +57,13 @@
 - Statistiche leggere senza cookie: POST /api/stats/track (pageview per pagina, quiz_start, quiz_submit, whatsapp_click, fresha_click) e GET /api/stats/summary protetto. Dashboard "Statistiche del sito" in /admin: visite oggi/7gg/30gg, contatti totali, quiz iniziati/completati, clic WhatsApp/Fresha, pagine più visitate.
 - I lead del quiz restano in /admin (tabella + filtri + export CSV).
 
+## Percorsi v2, ricerca listino, nuovo colore brand (04.11.2026)
+- Prezzi percorsi aggiornati su indicazione della titolare: Corpo leggero (80/350/729), Corpo tonico L3 = 10 anticellulite complete CHF 1500 (val. 2100), Luminosità (80/252/397), Anti-age L3 = rituale+2 plasma+2 rf+2 biostimolazioni CHF 1075 (1675), Uniformità (microneedling/carbon peel da 130, 350, 468), Pelle pulita L1 CHF 80, Mani e piedi L3 con opzione 3 refill gel CHF 210. Laser lasciato invariato (80/456/1134) — la titolare ha ricopiato senza modifiche.
+- Pausa benessere: aggiunti 3 protocolli benessere (Benessere 60' CHF 110, Gambe Leggere 60' CHF 110, Decontratturante 75' CHF 140) con frequenze consigliate e nota "riconosciuti dalle casse malati complementari" + percorsi da 6/9 trattamenti.
+- RME attivato (rme_valido=true): blocco rimborso casse malati visibile su /corpo; competenza aggiornata su /susana.
+- Barra di ricerca sul listino /servizi (filtra per parola chiave, conteggio risultati, stato vuoto).
+- BRAND: colore d'accento cambiato da rosa antico #B86A75 a teal/menta #58998B (soft #DFF0EC) su tutto il sito, logo e favicon, su richiesta della titolare (colore volantino Christmas Gift Experience).
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

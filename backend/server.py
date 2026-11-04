@@ -37,7 +37,7 @@ DEFAULT_SETTINGS = {
     "pagamento_rate_attivo": False,
     "banner_buoni_regalo_attivo": True,
     "sconto_quiz_attivo": True,
-    "rme_valido": False,
+    "rme_valido": True,
     "whatsapp_number": "",
     "fresha_url": "https://www.fresha.com/it/a/estetica-beauty-and-care-losone-via-locarno-58-jwl8ceyb/booking",
     "fresha_consulenza_url": "",

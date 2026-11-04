@@ -82,7 +82,7 @@ const Susana = () => (
       </div>
       <Reveal>
         <p className="mt-8 max-w-2xl text-sm text-muted-foreground">
-          La registrazione RME (rimborso casse malati complementari) è in corso di rinnovo e verrà pubblicata qui appena aggiornata, insieme agli altri titoli in verifica (Master Reiki, autorizzazioni cantonali).
+          Susana è terapista riconosciuta RME per massaggio classico, riflessologia plantare e drenaggio linfatico manuale: molte casse malati complementari rimborsano parte di questi trattamenti. Gli altri titoli (Master Reiki, autorizzazioni cantonali) saranno pubblicati qui dopo la verifica dei documenti.
         </p>
       </Reveal>
     </section>

@@ -54,7 +54,7 @@ export const SUSANA_COMPETENZE = [
   "Attestati federali O-LRNIS: laser, cellulite, pigmentazione",
   "Master Reiki",
   "Creatrice della linea alla rosa damascena",
-  "Registrazione RME (in corso di rinnovo)",
+  "Terapista riconosciuta RME – casse malati complementari",
 ];
 
 export const ATTESTATI = [
