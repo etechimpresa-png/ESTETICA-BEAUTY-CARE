@@ -20,6 +20,7 @@ import Grazie from "@/pages/Grazie";
 import Legale from "@/pages/Legale";
 import Admin from "@/pages/Admin";
 import EventoNatale from "@/pages/EventoNatale";
+import Faq from "@/pages/Faq";
 import ComingSoon from "@/pages/ComingSoon";
 
 const ScrollManager = () => {
@@ -61,6 +62,7 @@ function App() {
             <Route path="/formazione" element={<ComingSoon titolo="Formazione" testo="Le masterclass di Susana sono in preparazione. Torna a trovarci." />} />
             <Route path="/open-day" element={<EventoNatale />} />
             <Route path="/evento-natale" element={<EventoNatale />} />
+            <Route path="/faq" element={<Faq />} />
             <Route path="/privacy" element={<Legale tipo="privacy" />} />
             <Route path="/condizioni" element={<Legale tipo="condizioni" />} />
             <Route path="/cookie" element={<Legale tipo="cookie" />} />

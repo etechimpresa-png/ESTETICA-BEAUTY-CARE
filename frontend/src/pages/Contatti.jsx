@@ -1,9 +1,9 @@
 import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
-import { ORARI, IMAGES } from "@/lib/content";
+import { ORARI, IMAGES, PARCOGGIO, FACEBOOK_URL } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
-import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Facebook } from "lucide-react";
 
 const Contatti = () => {
   const { settings } = useSite();
@@ -42,7 +42,7 @@ const Contatti = () => {
           <div>
             <h2 className="flex items-center gap-2 font-serif text-xl font-semibold text-antracite"><MapPin size={19} className="text-rosa" /> Indirizzo</h2>
             <p className="mt-2 text-lg text-antracite">Estetica Beauty &amp; Care<br />Via Locarno 58, 6616 Losone (TI)</p>
-            <p className="mt-2 text-[15px] text-muted-foreground">Parcheggio: <Placeholder label="info parcheggio" /></p>
+            <p className="mt-2 text-[15px] text-muted-foreground">Parcheggio: {PARCOGGIO}</p>
           </div>
           <div>
             <h2 className="flex items-center gap-2 font-serif text-xl font-semibold text-antracite"><MessageCircle size={19} className="text-rosa" /> WhatsApp</h2>
@@ -60,6 +60,9 @@ const Contatti = () => {
             <h2 className="flex items-center gap-2 font-serif text-xl font-semibold text-antracite"><Phone size={19} className="text-rosa" /> Telefono ed email</h2>
             <p className="text-lg text-antracite">{settings.telefono || <Placeholder label="telefono" />}</p>
             <p className="flex items-center gap-2 text-lg text-antracite"><Mail size={17} className="text-rosa" /> {settings.email || <Placeholder label="email" />}</p>
+            <a data-testid="contatti-facebook-link" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-lg font-medium text-antracite hover:text-rosa">
+              <Facebook size={17} className="text-rosa" /> Estetica Beauty &amp; Care su Facebook
+            </a>
           </div>
           <div>
             <h2 className="font-serif text-xl font-semibold text-antracite">Orari</h2>

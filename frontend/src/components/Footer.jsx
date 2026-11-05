@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Logo } from "./Logo";
-import { ORARI } from "@/lib/content";
+import { ORARI, FACEBOOK_URL } from "@/lib/content";
+import { Facebook } from "lucide-react";
 import Placeholder from "./Placeholder";
 import { useSite } from "@/lib/siteContext";
 
@@ -42,7 +43,13 @@ const Footer = () => {
             <p>Telefono: {settings.telefono || <Placeholder label="telefono" />}</p>
             <p>Email: {settings.email || <Placeholder label="email" />}</p>
           </div>
-          <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          <div className="mt-6 space-y-2 text-sm">
+            <a data-testid="footer-facebook-link" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium text-muted-foreground hover:text-rosa">
+              <Facebook size={16} /> Seguici su Facebook
+            </a>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            <Link data-testid="footer-link-faq" to="/faq" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">FAQ</Link>
             <Link data-testid="footer-link-privacy" to="/privacy" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Privacy</Link>
             <Link data-testid="footer-link-condizioni" to="/condizioni" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Condizioni di vendita</Link>
             <Link data-testid="footer-link-cookie" to="/cookie" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Cookie</Link>

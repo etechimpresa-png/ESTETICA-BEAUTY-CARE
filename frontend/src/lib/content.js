@@ -271,3 +271,32 @@ export const LISTINO = [
     voci: [{ nome: "Consulenza con Susana", durata: null, prezzo: "gratuita" }],
   },
 ];
+
+export const PARCOGGIO = "Tre posteggi a disposizione davanti al palazzo: numeri 3, 4 e 11.";
+
+// Recensioni Google reali (senza data di pubblicazione, su richiesta del centro)
+export const RECENSIONI = [
+  { nome: "Risi F.", testo: "Mi sono sentita molto bene, ottimo servizio: personale stupendo, qualità-prezzo. Sbirciando tra i diplomi della signora ho notato che ha molte formazioni ed è molto preparata. Insomma: molto buona." },
+  { nome: "Aquilino", testo: "Ottimo servizio, personale gentile e qualificata con vari certificati. Mi sono trovata molto bene." },
+  { nome: "Solveig M.", testo: "Personale gentile, molta professionalità e onestà. Servizio accurato e sempre aggiornato sui nuovi prodotti e le proposte del mercato." },
+  { nome: "Jose M.", testo: "Vado spesso per cose diverse e mia moglie è contenta dei trattamenti per combattere la cellulite. Altamente raccomandato." },
+  { nome: "Yolfran R.", testo: "Ambiente armonioso, è ottimo." },
+  { nome: "Katia R.", testo: "Eccellente." },
+];
+
+export const GOOGLE_RECENSIONI_URL = "https://www.google.com/search?q=Estetica+Beauty+%26+Care+Losone+recensioni";
+export const FACEBOOK_URL = "https://www.facebook.com/esteticaalosone/";
+
+// FAQ (dal sito del centro)
+export const FAQ = [
+  { d: "Posso prenotare online?", r: "Sì: con Fresha prenoti 24/7 in 1 minuto, vedi la prima disponibilità e ricevi la conferma. In alternativa chiamaci o scrivici su WhatsApp al +41 79 649 40 05 negli orari di apertura." },
+  { d: "Quante sedute di laser a diodo servono?", r: "In media 6–8 sedute distanziate 4–6 settimane, in base a zona, fototipo e risposta individuale." },
+  { d: "L'epilazione laser fa male?", r: "La sensazione è simile a un elastico sulla pelle: fastidiosa ma tollerabile. Il diodo a contatto ha puntale raffreddato." },
+  { d: "Il laser è definitivo?", r: "Dopo il ciclo completo la ricrescita si riduce in modo stabile; eventuali peli residui si ritoccano con sedute di mantenimento." },
+  { d: "Quanto dura il microblading?", r: "12–18 mesi; dipende da tipo di pelle, età ed esposizione al sole. Il ritocco si fa dopo 4–6 settimane dalla prima seduta." },
+  { d: "Ci sono controindicazioni?", r: "Microblading non indicato in gravidanza, allattamento, terapie anticoagulanti o patologie cutanee attive nella zona." },
+  { d: "Quanto dura una seduta?", r: "La durata varia da trattamento a trattamento: la trovi indicata su Fresha accanto a ogni servizio; in studio ti confermiamo tempi e prezzo prima di iniziare." },
+  { d: "Posso spostare o annullare un appuntamento?", r: "Sì. Se hai prenotato con Fresha puoi gestire o spostare l'appuntamento dal link di conferma; altrimenti chiamaci o scrivici su WhatsApp al +41 79 649 40 05 il prima possibile." },
+  { d: "Come vi trovo e quando siete aperti?", r: "Siamo in Via Locarno 58 a Losone. Lun–Ven 8:30–12:00 e 13:00–18:30, Sab 8:30–12:00; mercoledì e domenica chiusi. Mappa e indicazioni nella pagina Contatti." },
+  { d: "Come funziona il primo appuntamento?", r: "Iniziamo con una consulenza: valutiamo insieme esigenze e tipo di pelle e definiamo il percorso più adatto, senza impegno." },
+];

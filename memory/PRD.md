@@ -74,6 +74,15 @@
 - Orari reali dalla foto della cliente: Lun/Mar/Gio/Ven 8:30–12:00 e 13:00–18:30, Mer e Dom chiuso, Sab 8:30–12:00. Segnaposto orari rimossi.
 - Logo ufficiale della cliente installato (trasparente in navbar/footer, versione circolare come favicon e avatar /link). Colore sito teal #58998B coerente col logo teal #20788A.
 
+## Contenuti finali cliente (05.11.2026)
+- Parcheggio: "Tre posteggi davanti al palazzo: numeri 3, 4 e 11" (Home + Contatti).
+- 6 recensioni Google reali 5 stelle in home, senza date, con link a Google. La recensione negativa 1 stella NON pubblicata (scelta editoriale condivisa: solo le positive fornite).
+- Facebook: facebook.com/esteticaalosone in footer e Contatti.
+- Pagina /faq con le 10 FAQ copiate dal sito attuale (numero aggiornato); link nel footer.
+- Legali complete: Privacy (nLPD/GDPR, quiz, eventi, Fresha, WhatsApp, statistiche interne), Condizioni, Cookie (nessun cookie terze parti, stats interne), Note legali con IVA CHE-181.789.225, ragione sociale "Estetica Beauty & Care di Susana Cabezas Agostino".
+- CORREZIONE: telefono unico +41 79 649 40 05 (uguale a WhatsApp); rimosso il fisso 091 730 10 77 da impostazioni, FAQ e legali.
+- Restano aperti: foto ingresso negozio, password admin definitiva, pubblicazione + dominio esteticabeautycare.com, trasferimento account alla cliente dopo il deploy.
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.

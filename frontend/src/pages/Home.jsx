@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import PercorsoCard from "@/components/PercorsoCard";
 import FreshaButton from "@/components/FreshaButton";
-import { IMAGES, TECNOLOGIE_CORPO, ORARI, LAVORI_HOME } from "@/lib/content";
+import { IMAGES, TECNOLOGIE_CORPO, ORARI, LAVORI_HOME, RECENSIONI, GOOGLE_RECENSIONI_URL, PARCOGGIO } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 
 const HeroLine = ({ children, delay }) => (
@@ -257,21 +257,26 @@ const Home = () => {
       <section className="container-site py-20 lg:py-24">
         <Reveal>
           <h2 className="font-serif text-3xl font-semibold text-antracite sm:text-4xl">Le parole delle clienti</h2>
+          <p className="mt-3 flex items-center gap-2 text-[15px] text-muted-foreground">
+            <Star size={15} className="fill-[#D4AF37] text-[#D4AF37]" /> Recensioni vere da Google
+          </p>
         </Reveal>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <Reveal key={i} delay={i * 0.1}>
-              <div className="flex h-full flex-col gap-3 rounded-3xl border border-dashed border-amber-500/50 bg-carta p-7">
+          {RECENSIONI.map((r, i) => (
+            <Reveal key={r.nome} delay={i * 0.08}>
+              <div className="flex h-full flex-col gap-3 rounded-3xl border border-border bg-carta p-7 shadow-sm" data-testid={`recensione-${i}`}>
                 <div className="flex gap-0.5 text-[#D4AF37]">{[...Array(5)].map((_, s) => <Star key={s} size={15} className="fill-current" />)}</div>
-                <Placeholder label={`recensione Google/Fresha autorizzata n. ${i}`} />
-                <p className="text-sm text-muted-foreground">Nome e iniziale della cliente</p>
+                <p className="flex-1 text-[15px] leading-relaxed text-antracite/85">“{r.testo}”</p>
+                <p className="text-sm font-semibold text-muted-foreground">{r.nome} · Recensione Google</p>
               </div>
             </Reveal>
           ))}
         </div>
-        <div className="mt-6">
-          <Placeholder label="link al profilo Google del centro" />
-        </div>
+        <Reveal>
+          <a href={GOOGLE_RECENSIONI_URL} target="_blank" rel="noopener noreferrer" data-testid="recensioni-google-link" className="mt-7 inline-flex items-center gap-2 font-semibold text-rosa hover:underline">
+            Leggi tutte le recensioni su Google <ArrowRight size={16} />
+          </a>
+        </Reveal>
       </section>
 
       {/* CHI È SUSANA */}
@@ -317,7 +322,7 @@ const Home = () => {
             <p className="mt-5 flex items-start gap-2 text-lg text-antracite">
               <MapPin size={20} className="mt-1 shrink-0 text-rosa" /> Via Locarno 58, 6616 Losone (TI)
             </p>
-            <div className="mt-4"><Placeholder label="info parcheggio" /></div>
+            <p className="mt-4 flex items-center gap-2 text-[15px] text-muted-foreground">Parcheggio: {PARCOGGIO}</p>
             <ul className="mt-6 space-y-1.5 text-[15px] text-muted-foreground">
               {ORARI.map((o) => (
                 <li key={o.giorno} className="flex gap-4"><span className="w-24">{o.giorno}</span><span className="text-antracite">{o.ore}</span></li>
