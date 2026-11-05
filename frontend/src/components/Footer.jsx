@@ -30,18 +30,15 @@ const Footer = () => {
             {ORARI.map((o) => (
               <li key={o.giorno} className="flex justify-between gap-6">
                 <span>{o.giorno}</span>
-                <span className="text-antracite">{o.ore}</span>
+                <span className="text-right text-antracite">{o.ore}</span>
               </li>
             ))}
           </ul>
-          <div className="mt-3">
-            <Placeholder label="orari da confermare con il centro" />
-          </div>
         </div>
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-antracite">Contatti</h4>
           <div className="space-y-2 text-[15px] text-muted-foreground">
-            <p>WhatsApp: {settings.whatsapp_number || <Placeholder label="numero WhatsApp dedicato" />}</p>
+            <p>WhatsApp: {settings.whatsapp_number ? `+${settings.whatsapp_number.replace(/(\d{2})(\d{3})(\d{3})(\d{2})(\d{2})/, "$1 $2 $3 $4 $5")}` : <Placeholder label="numero WhatsApp dedicato" />}</p>
             <p>Telefono: {settings.telefono || <Placeholder label="telefono" />}</p>
             <p>Email: {settings.email || <Placeholder label="email" />}</p>
           </div>

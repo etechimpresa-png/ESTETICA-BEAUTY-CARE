@@ -108,12 +108,12 @@ export const LAVORI_HOME = [
 ];
 
 export const ORARI = [
-  { giorno: "Lunedì", ore: "8:30 – 18:30" },
-  { giorno: "Martedì", ore: "8:30 – 18:30" },
-  { giorno: "Mercoledì", ore: "8:30 – 18:30" },
-  { giorno: "Giovedì", ore: "8:30 – 20:00" },
-  { giorno: "Venerdì", ore: "8:30 – 18:30" },
-  { giorno: "Sabato", ore: "9:00 – 13:00" },
+  { giorno: "Lunedì", ore: "8:30 – 12:00 / 13:00 – 18:30" },
+  { giorno: "Martedì", ore: "8:30 – 12:00 / 13:00 – 18:30" },
+  { giorno: "Mercoledì", ore: "Chiuso" },
+  { giorno: "Giovedì", ore: "8:30 – 12:00 / 13:00 – 18:30" },
+  { giorno: "Venerdì", ore: "8:30 – 12:00 / 13:00 – 18:30" },
+  { giorno: "Sabato", ore: "8:30 – 12:00" },
   { giorno: "Domenica", ore: "Chiuso" },
 ];
 

@@ -68,7 +68,6 @@ const Contatti = () => {
                 <li key={o.giorno} className="flex gap-4"><span className="w-24">{o.giorno}</span><span className="text-antracite">{o.ore}</span></li>
               ))}
             </ul>
-            <div className="mt-3"><Placeholder label="conferma orari (identici a Google, Fresha e Treatwell)" /></div>
           </div>
         </Reveal>
         <Reveal delay={0.15}>

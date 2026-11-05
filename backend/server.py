@@ -38,12 +38,12 @@ DEFAULT_SETTINGS = {
     "banner_buoni_regalo_attivo": True,
     "sconto_quiz_attivo": True,
     "rme_valido": True,
-    "whatsapp_number": "",
+    "whatsapp_number": "417964944005",
     "fresha_url": "https://www.fresha.com/it/a/estetica-beauty-and-care-losone-via-locarno-58-jwl8ceyb/booking",
     "fresha_consulenza_url": "",
     "fresha_buoni_url": "",
     "telefono": "091 730 10 77",
-    "email": "",
+    "email": "esteticabeautycare@hotmail.ch",
 }
 
 # ---------- Auth ----------

@@ -69,6 +69,11 @@
 - Pagina /evento-natale (e alias /open-day): "Christmas Gift Experience", venerdì 27 novembre ore 17:30, Golf Ascona; aperitivo offerto + omaggio; form conferma presenza (nome, telefono, n. persone, messaggio, consenso) → POST /api/event-rsvps; riepilogo in /admin con totale iscritti e persone; banner in home attivato via interruttore open_day_attivo (ora ON).
 - Recensioni Google: scraping bloccato da CAPTCHA Google — in attesa che l'utente incolli 3-5 testi di recensioni autorizzate (segnaposto ancora presenti in home).
 
+## Contatti reali, orari e logo (05.11.2026)
+- WhatsApp +41 79 649 40 05 e email esteticabeautycare@hotmail.ch attivi ovunque (bottone flottante, pulsanti, footer, contatti, pagina evento).
+- Orari reali dalla foto della cliente: Lun/Mar/Gio/Ven 8:30–12:00 e 13:00–18:30, Mer e Dom chiuso, Sab 8:30–12:00. Segnaposto orari rimossi.
+- Logo ufficiale della cliente installato (trasparente in navbar/footer, versione circolare come favicon e avatar /link). Colore sito teal #58998B coerente col logo teal #20788A.
+
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.
 - P0: inserire numero WhatsApp, link Fresha (consulenza, buoni), telefono, email → via /api/settings o admin.
