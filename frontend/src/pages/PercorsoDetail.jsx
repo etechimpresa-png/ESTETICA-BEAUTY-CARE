@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ShieldCheck, ChevronDown, CalendarCheck, Sparkles } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import { getPercorso } from "@/lib/api";
 import { GARANZIA, LAVORI_SGUARDO, FRESHA_URL } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
@@ -194,7 +193,7 @@ const PercorsoDetail = () => {
 
       <Reveal>
         <div className="mt-12 flex flex-wrap items-center gap-4">
-          {settings.whatsapp_number ? (
+          {settings.whatsapp_number && (
             <a
               data-testid="percorso-whatsapp-btn"
               href={waLink(settings.whatsapp_number, `Ciao, ho una domanda sul percorso ${p.nome}.`)}
@@ -203,8 +202,6 @@ const PercorsoDetail = () => {
             >
               Ho una domanda su questo percorso
             </a>
-          ) : (
-            <Placeholder label="numero WhatsApp dedicato" />
           )}
           <button data-testid="percorso-quiz-btn" onClick={openQuiz} className="btn-secondary">
             <Sparkles size={17} /> Fai il quiz

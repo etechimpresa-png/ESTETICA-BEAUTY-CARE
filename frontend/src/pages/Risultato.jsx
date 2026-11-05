@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShieldCheck, Sparkles, Gift, TicketPercent } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import FreshaButton from "@/components/FreshaButton";
 import PercorsoCard from "@/components/PercorsoCard";
 import { LivelloCard } from "./PercorsoDetail";
@@ -93,15 +92,10 @@ const Risultato = () => {
 
       <Reveal>
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          {waHref ? (
+          {waHref && (
             <a data-testid="risultato-whatsapp-btn" href={waHref} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Ricevi ora la tua consulenza gratuita
             </a>
-          ) : (
-            <span className="flex flex-col items-start gap-2">
-              <span className="btn-primary pointer-events-none opacity-60">Ricevi ora la tua consulenza gratuita</span>
-              <Placeholder label="numero WhatsApp dedicato (il messaggio precompilato è pronto)" />
-            </span>
           )}
           <FreshaButton label="Preferisco prenotare direttamente la consulenza" testid="risultato-fresha-btn" />
         </div>

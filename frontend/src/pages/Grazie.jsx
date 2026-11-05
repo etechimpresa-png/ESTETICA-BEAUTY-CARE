@@ -1,6 +1,5 @@
 import Reveal from "@/components/Reveal";
 import FreshaButton from "@/components/FreshaButton";
-import Placeholder from "@/components/Placeholder";
 import { CheckCircle2 } from "lucide-react";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
@@ -27,12 +26,10 @@ const Grazie = () => {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <FreshaButton label="Prenota la consulenza inclusa" testid="grazie-fresha-btn" className="btn-primary" />
-          {settings.whatsapp_number ? (
+          {settings.whatsapp_number && (
             <a data-testid="grazie-whatsapp-btn" href={waLink(settings.whatsapp_number, "Ciao, ho appena acquistato un percorso.")} target="_blank" rel="noopener noreferrer" className="btn-secondary">
               Scrivici su WhatsApp
             </a>
-          ) : (
-            <Placeholder label="numero WhatsApp dedicato" />
           )}
         </div>
       </Reveal>

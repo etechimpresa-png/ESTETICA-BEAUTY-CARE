@@ -1,5 +1,4 @@
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import { ORARI, IMAGES, PARCOGGIO, FACEBOOK_URL } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
@@ -34,9 +33,6 @@ const Contatti = () => {
               <figure className="overflow-hidden rounded-2xl border border-border" data-testid="centro-foto-pedicure">
                 <img src={IMAGES.pedicure} alt="La zona manicure e pedicure" className="aspect-[3/4] h-full w-full object-cover" loading="lazy" />
               </figure>
-              <div className="flex aspect-[3/4] items-center justify-center rounded-2xl border border-dashed border-amber-500/50 bg-elevato p-3 text-center" data-testid="centro-foto-slot-ingresso">
-                <Placeholder label="foto del negozio: ingresso" />
-              </div>
             </div>
           </div>
           <div>
@@ -46,20 +42,18 @@ const Contatti = () => {
           </div>
           <div>
             <h2 className="flex items-center gap-2 font-serif text-xl font-semibold text-antracite"><MessageCircle size={19} className="text-rosa" /> WhatsApp</h2>
-            <div className="mt-3" id="whatsapp-placeholder">
-              {settings.whatsapp_number ? (
-                <a data-testid="contatti-whatsapp-btn" href={waLink(settings.whatsapp_number, "Ciao, vorrei informazioni.")} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                  Scrivici su WhatsApp
-                </a>
-              ) : (
-                <Placeholder label="numero WhatsApp dedicato (+41 …)" />
-              )}
-            </div>
+            <a
+            data-testid="contatti-whatsapp-btn"
+            href={waLink(settings.whatsapp_number, "Ciao, vorrei informazioni.")}
+            target="_blank" rel="noopener noreferrer" className="btn-primary"
+          >
+            Scrivici su WhatsApp
+          </a>
           </div>
           <div className="space-y-3">
             <h2 className="flex items-center gap-2 font-serif text-xl font-semibold text-antracite"><Phone size={19} className="text-rosa" /> Telefono ed email</h2>
-            <p className="text-lg text-antracite">{settings.telefono || <Placeholder label="telefono" />}</p>
-            <p className="flex items-center gap-2 text-lg text-antracite"><Mail size={17} className="text-rosa" /> {settings.email || <Placeholder label="email" />}</p>
+            <p className="text-lg text-antracite">{settings.telefono}</p>
+            <p className="flex items-center gap-2 text-lg text-antracite"><Mail size={17} className="text-rosa" /> {settings.email}</p>
             <a data-testid="contatti-facebook-link" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-lg font-medium text-antracite hover:text-rosa">
               <Facebook size={17} className="text-rosa" /> Estetica Beauty &amp; Care su Facebook
             </a>

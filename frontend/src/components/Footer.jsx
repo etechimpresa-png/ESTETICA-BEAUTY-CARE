@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Logo } from "./Logo";
 import { ORARI, FACEBOOK_URL } from "@/lib/content";
 import { Facebook } from "lucide-react";
-import Placeholder from "./Placeholder";
 import { useSite } from "@/lib/siteContext";
 
 const Footer = () => {
@@ -39,9 +38,9 @@ const Footer = () => {
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-antracite">Contatti</h4>
           <div className="space-y-2 text-[15px] text-muted-foreground">
-            <p>WhatsApp: {settings.whatsapp_number ? `+${settings.whatsapp_number.replace(/(\d{2})(\d{2})(\d{3})(\d{2})(\d{2})$/, "$1 $2 $3 $4 $5")}` : <Placeholder label="numero WhatsApp dedicato" />}</p>
-            <p>Telefono: {settings.telefono || <Placeholder label="telefono" />}</p>
-            <p>Email: {settings.email || <Placeholder label="email" />}</p>
+            {settings.whatsapp_number && <p>WhatsApp: {`+${settings.whatsapp_number.replace(/(\d{2})(\d{2})(\d{3})(\d{2})(\d{2})$/, "$1 $2 $3 $4 $5")}`}</p>}
+            {settings.telefono && <p>Telefono: {settings.telefono}</p>}
+            {settings.email && <p>Email: {settings.email}</p>}
           </div>
           <div className="mt-6 space-y-2 text-sm">
             <a data-testid="footer-facebook-link" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium text-muted-foreground hover:text-rosa">

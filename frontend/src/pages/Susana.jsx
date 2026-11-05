@@ -1,5 +1,4 @@
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import { ATTESTATI, METODO_ROSA, SUSANA_STORIA, SUSANA_COMPETENZE, IMAGES } from "@/lib/content";
 import { BadgeCheck } from "lucide-react";
 

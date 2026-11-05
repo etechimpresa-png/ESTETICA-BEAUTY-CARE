@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Sparkles, ChevronDown } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
 import { IMAGES, LAVORI_CORPO, TEC_DESCRIZIONI } from "@/lib/content";
@@ -144,12 +143,10 @@ const Corpo = () => {
               <button data-testid="corpo-quiz-btn" onClick={openQuiz} className="btn-primary">
                 <Sparkles size={18} /> Scopri il percorso corpo giusto per te
               </button>
-              {settings.whatsapp_number ? (
+              {settings.whatsapp_number && (
                 <a data-testid="corpo-whatsapp-btn" href={waLink(settings.whatsapp_number, "Ciao, vorrei informazioni sui trattamenti corpo.")} target="_blank" rel="noopener noreferrer" className="btn-secondary border-carta/40 text-carta hover:bg-carta/10">
                   Scrivici su WhatsApp
                 </a>
-              ) : (
-                <Placeholder label="numero WhatsApp dedicato" />
               )}
             </div>
           </div>

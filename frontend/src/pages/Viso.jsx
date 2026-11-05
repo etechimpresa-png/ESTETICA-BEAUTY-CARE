@@ -1,5 +1,4 @@
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import PercorsoCard from "@/components/PercorsoCard";
 import { METODO_ROSA, IMAGES, PRODOTTI } from "@/lib/content";
 import { useSite } from "@/lib/siteContext";

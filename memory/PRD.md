@@ -82,6 +82,7 @@
 - Legali complete: Privacy (nLPD/GDPR, quiz, eventi, Fresha, WhatsApp, statistiche interne), Condizioni, Cookie (nessun cookie terze parti, stats interne), Note legali con IVA CHE-181.789.225, ragione sociale "Estetica Beauty & Care di Susana Cabezas Agostino".
 - CORREZIONE: telefono unico +41 79 649 40 05 (uguale a WhatsApp); rimosso il fisso 091 730 10 77 da impostazioni, FAQ e legali.
 - Restano aperti: foto ingresso negozio, password admin definitiva, pubblicazione + dominio esteticabeautycare.com, trasferimento account alla cliente dopo il deploy.
+- Pulizia finale: rimossi TUTTI i segnaposto "[DA INSERIRE]" dal sito (richiesta utente). Descrizioni tecnologie sostituite con testi generici senza promesse mediche; slot foto ingresso e box video rimossi del tutto. Footer: barra legale in basso con IVA CHE-181.789.225. Ricerca globale con lente nel menu (risultati → /servizi?q=).
 
 ## Backlog prioritizzato
 - P0 (Fase 4): collegamento Shopify (credenziali utente) — carrello, checkout, QUIZ10, clienti con tag, /grazie da ordine reale, collezione in-evidenza da Shopify.

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Sparkles, Star, MapPin, ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
 import PercorsoCard from "@/components/PercorsoCard";
 import FreshaButton from "@/components/FreshaButton";
 import { IMAGES, TECNOLOGIE_CORPO, ORARI, LAVORI_HOME, RECENSIONI, GOOGLE_RECENSIONI_URL, PARCOGGIO } from "@/lib/content";
