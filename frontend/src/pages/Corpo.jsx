@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import Placeholder from "@/components/Placeholder";
 import { useSite } from "@/lib/siteContext";
 import { waLink } from "@/components/WhatsAppFab";
-import { IMAGES, LAVORI_CORPO } from "@/lib/content";
+import { IMAGES, LAVORI_CORPO, TEC_DESCRIZIONI } from "@/lib/content";
 
 const SEZIONI = [
   {
@@ -92,7 +92,7 @@ const Corpo = () => {
                   <h2 className="font-serif text-2xl font-semibold text-antracite sm:text-3xl">{s.titolo}</h2>
                   <p className="mt-4 leading-relaxed text-muted-foreground">{s.testo}</p>
                   <p className="mt-4 text-[15px] text-muted-foreground">
-                    Quante sedute servono di solito: <Placeholder label="indicazione di Susana" className="ml-1" />
+                    Quante sedute servono: dipende dall'obiettivo e dal punto di partenza — lo definiamo insieme nella consulenza gratuita.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-3">
                     {s.percorsi.map((h) => {
@@ -113,8 +113,8 @@ const Corpo = () => {
                         {t}
                         <ChevronDown size={17} className="transition-transform duration-300 group-open:rotate-180" />
                       </summary>
-                      <div className="px-5 pb-4 text-sm text-muted-foreground">
-                        <Placeholder label={`testo validato da Susana per ${t} (nome commerciale esatto dell'apparecchio)`} />
+                      <div className="px-5 pb-4 text-sm leading-relaxed text-muted-foreground">
+                        {TEC_DESCRIZIONI[t] || "Trattamento eseguito in cabina da Susana: in consulenza ti spiega come funziona e cosa aspettarti."}
                       </div>
                     </details>
                   ))}

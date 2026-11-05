@@ -13,7 +13,7 @@ PERCORSI = [
             {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "3 anticellulite + 3 linfodrenaggi", "prezzo": 729, "prezzo_pieno": 810, "opzioni": None},
         ],
         "faq": [
-            {"d": "Quante sedute servono di solito?", "r": "[DA INSERIRE: indicazione di Susana per questo percorso]"},
+            {"d": "Quante sedute servono di solito?", "r": "Dipende dall'obiettivo e dal punto di partenza: lo definiamo insieme nella consulenza gratuita che apre ogni percorso."},
             {"d": "Il drenaggio linfatico è un trattamento medico?", "r": "No: viene eseguito come drenaggio linfatico a fini estetici, per il benessere e la leggerezza delle gambe."},
         ],
         "in_evidenza": False, "stagionale": "Marzo - maggio",
@@ -29,7 +29,7 @@ PERCORSI = [
             {"n": 3, "titolo": "Livello 3 – Completo", "servizi": "10 anticellulite con radiofrequenza, cavitazione, stimolazione, drenaggio e principi attivi", "prezzo": 1500, "prezzo_pieno": 2100, "opzioni": None},
         ],
         "faq": [
-            {"d": "Quante sedute servono di solito?", "r": "[DA INSERIRE: indicazione di Susana per questo percorso]"},
+            {"d": "Quante sedute servono di solito?", "r": "Dipende dall'obiettivo e dal punto di partenza: lo definiamo insieme nella consulenza gratuita che apre ogni percorso."},
             {"d": "Si sceglie la tecnologia prima della consulenza?", "r": "No: in consulenza gratuita valutiamo insieme la combinazione più adatta al tuo obiettivo."},
         ],
         "in_evidenza": False, "stagionale": "Marzo - maggio",

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { Search } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import FreshaButton from "@/components/FreshaButton";
@@ -16,7 +16,12 @@ const Prezzo = ({ prezzo }) => {
 
 const Servizi = () => {
   const { percorsoByHandle } = useSite();
+  const [searchParams] = useSearchParams();
   const [cerca, setCerca] = useState("");
+  useEffect(() => {
+    const q = searchParams.get("q");
+    if (q) setCerca(q);
+  }, [searchParams]);
   const totale = LISTINO.reduce((n, f) => n + f.voci.length, 0);
   const q = cerca.trim().toLowerCase();
   const listinoFiltrato = LISTINO

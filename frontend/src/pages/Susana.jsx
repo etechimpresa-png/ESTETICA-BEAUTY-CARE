@@ -27,9 +27,6 @@ const Susana = () => (
               </span>
             ))}
           </div>
-          <div className="mt-6">
-            <Placeholder label="storia personale completa raccontata da Susana (la aggiungiamo qui)" />
-          </div>
         </Reveal>
       </div>
     </section>

@@ -39,7 +39,7 @@ const Footer = () => {
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-antracite">Contatti</h4>
           <div className="space-y-2 text-[15px] text-muted-foreground">
-            <p>WhatsApp: {settings.whatsapp_number ? `+${settings.whatsapp_number.replace(/(\d{2})(\d{3})(\d{3})(\d{2})(\d{2})/, "$1 $2 $3 $4 $5")}` : <Placeholder label="numero WhatsApp dedicato" />}</p>
+            <p>WhatsApp: {settings.whatsapp_number ? `+${settings.whatsapp_number.replace(/(\d{2})(\d{2})(\d{3})(\d{2})(\d{2})$/, "$1 $2 $3 $4 $5")}` : <Placeholder label="numero WhatsApp dedicato" />}</p>
             <p>Telefono: {settings.telefono || <Placeholder label="telefono" />}</p>
             <p>Email: {settings.email || <Placeholder label="email" />}</p>
           </div>
@@ -48,17 +48,19 @@ const Footer = () => {
               <Facebook size={16} /> Seguici su Facebook
             </a>
           </div>
-          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
-            <Link data-testid="footer-link-faq" to="/faq" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">FAQ</Link>
-            <Link data-testid="footer-link-privacy" to="/privacy" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Privacy</Link>
-            <Link data-testid="footer-link-condizioni" to="/condizioni" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Condizioni di vendita</Link>
-            <Link data-testid="footer-link-cookie" to="/cookie" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Cookie</Link>
-            <Link data-testid="footer-link-note-legali" to="/note-legali" className="text-muted-foreground underline-offset-4 hover:text-rosa hover:underline">Note legali</Link>
-          </div>
         </div>
       </div>
-      <div className="border-t border-border/70 py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Estetica Beauty &amp; Care – Losone. Tutti i diritti riservati.
+      <div className="border-t border-border/70 py-5">
+        <div className="container-site flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
+          <p>© {new Date().getFullYear()} Estetica Beauty &amp; Care di Susana Cabezas Agostino · Via Locarno 58, 6616 Losone (TI) · IVA CHE-181.789.225</p>
+          <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1" aria-label="Documenti legali">
+            <Link data-testid="footer-bottom-faq" to="/faq" className="hover:text-rosa hover:underline underline-offset-4">FAQ</Link>
+            <Link data-testid="footer-bottom-privacy" to="/privacy" className="hover:text-rosa hover:underline underline-offset-4">Privacy</Link>
+            <Link data-testid="footer-bottom-condizioni" to="/condizioni" className="hover:text-rosa hover:underline underline-offset-4">Condizioni di vendita</Link>
+            <Link data-testid="footer-bottom-cookie" to="/cookie" className="hover:text-rosa hover:underline underline-offset-4">Cookie</Link>
+            <Link data-testid="footer-bottom-note-legali" to="/note-legali" className="hover:text-rosa hover:underline underline-offset-4">Note legali</Link>
+          </nav>
+        </div>
       </div>
     </footer>
   );

@@ -287,6 +287,46 @@ export const RECENSIONI = [
 export const GOOGLE_RECENSIONI_URL = "https://www.google.com/search?q=Estetica+Beauty+%26+Care+Losone+recensioni";
 export const FACEBOOK_URL = "https://www.facebook.com/esteticaalosone/";
 
+// Descrizioni brevi delle tecnologie (testi generici, senza promesse mediche)
+export const TEC_DESCRIZIONI = {
+  "Drenaggio linfatico manuale a fini estetici": "Movimenti lenti e ritmici che accompagnano i liquidi verso le stazioni linfatiche: gambe più leggere e sgonfie. Eseguito a fini estetici.",
+  "Drenaggio linfatico a fini estetici": "Movimenti lenti e ritmici che accompagnano i liquidi verso le stazioni linfatiche: gambe più leggere e sgonfie. Eseguito a fini estetici.",
+  "Pressoterapia": "Gambali che si gonfiano in sequenza come un massaggio meccanico: favorisce il drenaggio dei liquidi e la sensazione di gambe leggere.",
+  "Endosfer Endermologia": "Un manipolo con sfere rotanti che massaggia i tessuti in profondità: lavora su ritenzione e inestetismi della cellulite.",
+  "Endosfer": "Un manipolo con sfere rotanti che massaggia i tessuti in profondità: lavora su ritenzione e inestetismi della cellulite.",
+  "Endermologia": "Un manipolo con sfere rotanti che massaggia i tessuti in profondità: lavora su ritenzione e inestetismi della cellulite.",
+  "Cavitazione": "Ultrasuoni a bassa frequenza che lavorano sugli inestetismi adiposi localizzati, in modo non invasivo.",
+  "Radiofrequenza corpo": "Calore controllato che stimola il collagene: tessuti più tonici e compatti.",
+  "Radiofrequenza Triple Action": "Radiofrequenza abbinata ad altre azioni combinate nello stesso trattamento: tonicità e lavoro sugli inestetismi in una seduta sola.",
+  "Sauna Cocoon": "Un guscio di calore avvolgente che favorisce la sudorazione e il relax, spesso in abbinamento ai trattamenti corpo.",
+  "Laser a diodo": "Epilazione progressivamente duratura: la luce colpisce il pelo alla radice, seduta dopo seduta. Eseguito con attestato federale O-LRNIS.",
+  "Laser a diodo (attestato federale O-LRNIS)": "Epilazione progressivamente duratura: la luce colpisce il pelo alla radice, seduta dopo seduta. Eseguito con attestato federale O-LRNIS.",
+  "Trattamento anticellulite": "Trattamento manuale specifico sugli inestetismi della cellulite, spesso in combinazione con le tecnologie.",
+  "Massaggio classico": "Il massaggio tradizionale per sciogliere le tensioni muscolari e ritrovare benessere generale.",
+  "Massaggio relax": "Movimenti avvolgenti e ritmo lento: un'ora per staccare davvero.",
+  "Riflessologia plantare": "Pressioni mirate sui punti riflessi del piede, collegati alle diverse zone del corpo.",
+  "Reiki": "Trattamento energetico dolce per l'equilibrio di corpo e mente. Susana è Master Reiki.",
+  "Plasma freddo": "Tecnologia viso che lavora su rughe e uniformità del colorito stimolando il rinnovamento della pelle.",
+  "Radiofrequenza viso": "Calore controllato che stimola il collagene del viso: pelle più tonica e compatta.",
+  "Laminazione ciglia": "Ciglia curvate e nutrite per settimane, senza mascara.",
+  "Laminazione sopracciglia": "Sopracciglia pettinate e fissate nella forma ideale, per settimane.",
+  "Microblading": "Trucco semipermanente delle sopracciglia, pelo a pelo. Solo dopo consulenza.",
+  "Manicure": "Cura completa delle unghie delle mani: forma, cuticole e smalto.",
+  "Semipermanente piedi": "Smalto semipermanente per piedi in ordine per settimane.",
+  "Ceretta professionale": "Epilazione a cera eseguita in cabina, con prodotti delicati.",
+  "Trattamento manuale viso": "Pulizia e trattamento viso eseguiti a mano, secondo le fasi del Metodo Rosa.",
+  "Prodotti alla rosa damascena": "La linea naturale creata da Susana: latte, tonico, siero e crema alla rosa damascena.",
+  "Pulizia viso professionale": "Pulizia profonda della pelle del viso, adattata al tuo tipo di pelle.",
+  "Trattamento con suono": "Vibrazioni e suoni per un rilassamento profondo.",
+  "Reiki (Susana è Master Reiki)": "Trattamento energetico dolce per l'equilibrio di corpo e mente. Susana è Master Reiki.",
+  "Trattamento viso": "Trattamento viso completo, con la tecnologia o il rituale scelti in consulenza.",
+  "Massaggio olistico": "Un trattamento che lavora sull'equilibrio di corpo e mente.",
+  "Microneedling": "Microstimolazione della pelle che favorisce il rinnovamento e l'uniformità del colorito.",
+  "Carbon peel laser yang": "Peeling al carbone attivato dal laser: pelle più luminosa e pori affinati.",
+  "Biostimolazione": "Stimolazione della pelle con principi attivi, per sostenere tono e idratazione.",
+  "Trattamento viso mirato": "Trattamento viso mirato alle macchie e all'uniformità del colorito.",
+};
+
 // FAQ (dal sito del centro)
 export const FAQ = [
   { d: "Posso prenotare online?", r: "Sì: con Fresha prenoti 24/7 in 1 minuto, vedi la prima disponibilità e ricevi la conferma. In alternativa chiamaci o scrivici su WhatsApp al +41 79 649 40 05 negli orari di apertura." },
