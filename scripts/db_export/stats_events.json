@@ -1,0 +1,1292 @@
+[
+ {
+  "_id": "6ae2107b2de2e524058c0716",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:10:51.698303+00:00"
+ },
+ {
+  "_id": "6ae2107b2de2e524058c0717",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:10:51.708221+00:00"
+ },
+ {
+  "_id": "6ae2107c2de2e524058c0718",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-10-28T15:10:52.054574+00:00"
+ },
+ {
+  "_id": "6ae2107c2de2e524058c0719",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-10-28T15:10:52.105144+00:00"
+ },
+ {
+  "_id": "6ae210be2de2e524058c071a",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:11:58.325225+00:00"
+ },
+ {
+  "_id": "6ae210be2de2e524058c071b",
+  "event": "quiz_start",
+  "path": "/",
+  "ts": "2026-10-28T15:11:58.500395+00:00"
+ },
+ {
+  "_id": "6ae210c72de2e524058c071c",
+  "event": "pageview",
+  "path": "/admin",
+  "ts": "2026-10-28T15:12:07.780579+00:00"
+ },
+ {
+  "_id": "6ae210c72de2e524058c071d",
+  "event": "pageview",
+  "path": "/admin",
+  "ts": "2026-10-28T15:12:07.812211+00:00"
+ },
+ {
+  "_id": "6ae211ea2de2e524058c071e",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:16:58.348602+00:00"
+ },
+ {
+  "_id": "6ae211ea2de2e524058c071f",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:16:58.364729+00:00"
+ },
+ {
+  "_id": "6ae213c12de2e524058c0720",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:24:49.931870+00:00"
+ },
+ {
+  "_id": "6ae213c12de2e524058c0721",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:24:49.978788+00:00"
+ },
+ {
+  "_id": "6ae213c32de2e524058c0722",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:24:51.818682+00:00"
+ },
+ {
+  "_id": "6ae213c42de2e524058c0723",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:24:52.076452+00:00"
+ },
+ {
+  "_id": "6ae213d32de2e524058c0724",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:07.875007+00:00"
+ },
+ {
+  "_id": "6ae213d32de2e524058c0725",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:07.914637+00:00"
+ },
+ {
+  "_id": "6ae213de2de2e524058c0726",
+  "event": "pageview",
+  "path": "/buoni-regalo",
+  "ts": "2026-10-28T15:25:18.513218+00:00"
+ },
+ {
+  "_id": "6ae213e32de2e524058c0727",
+  "event": "fresha_click",
+  "path": "/buoni-regalo",
+  "ts": "2026-10-28T15:25:23.709926+00:00"
+ },
+ {
+  "_id": "6ae213ee2de2e524058c0729",
+  "event": "quiz_submit",
+  "path": "/",
+  "ts": "2026-10-28T15:25:34.732756+00:00"
+ },
+ {
+  "_id": "6ae213ee2de2e524058c072a",
+  "event": "pageview",
+  "path": "/risultato",
+  "ts": "2026-10-28T15:25:34.863405+00:00"
+ },
+ {
+  "_id": "6ae213f42de2e524058c072b",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:40.519415+00:00"
+ },
+ {
+  "_id": "6ae213f42de2e524058c072c",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:40.746264+00:00"
+ },
+ {
+  "_id": "6ae213f62de2e524058c072d",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:42.304437+00:00"
+ },
+ {
+  "_id": "6ae213fb2de2e524058c072e",
+  "event": "fresha_click",
+  "path": "/",
+  "ts": "2026-10-28T15:25:47.528981+00:00"
+ },
+ {
+  "_id": "6ae214062de2e524058c072f",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:58.439626+00:00"
+ },
+ {
+  "_id": "6ae214062de2e524058c0730",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:25:58.448301+00:00"
+ },
+ {
+  "_id": "6ae214062de2e524058c0731",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-10-28T15:25:58.963526+00:00"
+ },
+ {
+  "_id": "6ae2140d2de2e524058c0732",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-10-28T15:26:05.607139+00:00"
+ },
+ {
+  "_id": "6ae214152de2e524058c0733",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-10-28T15:26:13.539974+00:00"
+ },
+ {
+  "_id": "6ae214172de2e524058c0734",
+  "event": "fresha_click",
+  "path": "/servizi",
+  "ts": "2026-10-28T15:26:15.837752+00:00"
+ },
+ {
+  "_id": "6ae214292de2e524058c0735",
+  "event": "pageview",
+  "path": "/percorsi/corpo-leggero",
+  "ts": "2026-10-28T15:26:33.132270+00:00"
+ },
+ {
+  "_id": "6ae214412de2e524058c0736",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:26:57.092289+00:00"
+ },
+ {
+  "_id": "6ae214412de2e524058c0737",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:26:57.100030+00:00"
+ },
+ {
+  "_id": "6ae214572de2e524058c0738",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-10-28T15:27:19.937376+00:00"
+ },
+ {
+  "_id": "6ae215d52de2e524058c0739",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:33:41.746220+00:00"
+ },
+ {
+  "_id": "6ae215d52de2e524058c073a",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:33:41.757238+00:00"
+ },
+ {
+  "_id": "6ae21ae12de2e524058c073b",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:55:13.606563+00:00"
+ },
+ {
+  "_id": "6ae21ae12de2e524058c073c",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:55:13.652068+00:00"
+ },
+ {
+  "_id": "6ae21ae52de2e524058c073d",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:55:17.414165+00:00"
+ },
+ {
+  "_id": "6ae21ae52de2e524058c073e",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:55:17.420414+00:00"
+ },
+ {
+  "_id": "6ae21b572de2e524058c073f",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-10-28T15:57:11.754908+00:00"
+ },
+ {
+  "_id": "6ae21b582de2e524058c0740",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-10-28T15:57:12.689143+00:00"
+ },
+ {
+  "_id": "6ae21b5a2de2e524058c0741",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-10-28T15:57:14.163552+00:00"
+ },
+ {
+  "_id": "6ae21b832de2e524058c0742",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-10-28T15:57:55.583747+00:00"
+ },
+ {
+  "_id": "6ae21b862de2e524058c0743",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-10-28T15:57:58.766309+00:00"
+ },
+ {
+  "_id": "6ae21b8c2de2e524058c0744",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-10-28T15:58:04.230011+00:00"
+ },
+ {
+  "_id": "6ae21bc22de2e524058c0745",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-10-28T15:58:58.804512+00:00"
+ },
+ {
+  "_id": "6ae21bc42de2e524058c0746",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:59:00.292110+00:00"
+ },
+ {
+  "_id": "6ae21be12de2e524058c0747",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:59:29.478824+00:00"
+ },
+ {
+  "_id": "6ae21be12de2e524058c0748",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T15:59:29.495577+00:00"
+ },
+ {
+  "_id": "6ae21c492de2e524058c0749",
+  "event": "quiz_start",
+  "path": "/",
+  "ts": "2026-10-28T16:01:13.004508+00:00"
+ },
+ {
+  "_id": "6ae21c8a2de2e524058c074a",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-10-28T16:02:18.448239+00:00"
+ },
+ {
+  "_id": "6ae21cae2de2e524058c074b",
+  "event": "pageview",
+  "path": "/percorsi/pausa-benessere",
+  "ts": "2026-10-28T16:02:54.892169+00:00"
+ },
+ {
+  "_id": "6ae21cc22de2e524058c074c",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-10-28T16:03:14.015364+00:00"
+ },
+ {
+  "_id": "6ae21ccd2de2e524058c074d",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-10-28T16:03:25.639264+00:00"
+ },
+ {
+  "_id": "6ae21ce92de2e524058c074e",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-10-28T16:03:53.627180+00:00"
+ },
+ {
+  "_id": "6ae21cea2de2e524058c074f",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-10-28T16:03:54.379596+00:00"
+ },
+ {
+  "_id": "6ae21cf72de2e524058c0750",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-10-28T16:04:07.873914+00:00"
+ },
+ {
+  "_id": "6ae21d032de2e524058c0751",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-10-28T16:04:19.966251+00:00"
+ },
+ {
+  "_id": "6ae21d092de2e524058c0752",
+  "event": "pageview",
+  "path": "/buoni-regalo",
+  "ts": "2026-10-28T16:04:25.377588+00:00"
+ },
+ {
+  "_id": "6ae21d0e2de2e524058c0753",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-10-28T16:04:30.542389+00:00"
+ },
+ {
+  "_id": "6ae21d132de2e524058c0754",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:04:35.303756+00:00"
+ },
+ {
+  "_id": "6ae21d7e2de2e524058c0755",
+  "event": "quiz_start",
+  "path": "/",
+  "ts": "2026-10-28T16:06:22.111928+00:00"
+ },
+ {
+  "_id": "6ae21d922de2e524058c0757",
+  "event": "quiz_submit",
+  "path": "/",
+  "ts": "2026-10-28T16:06:42.380474+00:00"
+ },
+ {
+  "_id": "6ae21d922de2e524058c0758",
+  "event": "pageview",
+  "path": "/risultato",
+  "ts": "2026-10-28T16:06:42.495626+00:00"
+ },
+ {
+  "_id": "6ae21da12de2e524058c0759",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:06:57.808794+00:00"
+ },
+ {
+  "_id": "6ae21dc52de2e524058c075a",
+  "event": "quiz_start",
+  "path": "/",
+  "ts": "2026-10-28T16:07:33.750974+00:00"
+ },
+ {
+  "_id": "6ae21e182de2e524058c075c",
+  "event": "quiz_submit",
+  "path": "/",
+  "ts": "2026-10-28T16:08:56.289300+00:00"
+ },
+ {
+  "_id": "6ae21e182de2e524058c075d",
+  "event": "pageview",
+  "path": "/risultato",
+  "ts": "2026-10-28T16:08:56.390429+00:00"
+ },
+ {
+  "_id": "6ae21e402de2e524058c075e",
+  "event": "quiz_start",
+  "path": "/risultato",
+  "ts": "2026-10-28T16:09:36.955180+00:00"
+ },
+ {
+  "_id": "6ae21e4a2de2e524058c075f",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:09:46.426486+00:00"
+ },
+ {
+  "_id": "6ae21e932de2e524058c0760",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-10-28T16:10:59.181192+00:00"
+ },
+ {
+  "_id": "6ae21eb92de2e524058c0761",
+  "event": "pageview",
+  "path": "/percorsi/corpo-leggero",
+  "ts": "2026-10-28T16:11:37.322191+00:00"
+ },
+ {
+  "_id": "6ae21ec32de2e524058c0762",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-10-28T16:11:47.434978+00:00"
+ },
+ {
+  "_id": "6ae21ee22de2e524058c0763",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-10-28T16:12:18.231172+00:00"
+ },
+ {
+  "_id": "6ae21efe2de2e524058c0764",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-10-28T16:12:46.197653+00:00"
+ },
+ {
+  "_id": "6ae21f1b2de2e524058c0765",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-10-28T16:13:15.585173+00:00"
+ },
+ {
+  "_id": "6ae21f3e2de2e524058c0766",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-10-28T16:13:50.795795+00:00"
+ },
+ {
+  "_id": "6ae21f542de2e524058c0767",
+  "event": "pageview",
+  "path": "/buoni-regalo",
+  "ts": "2026-10-28T16:14:12.299204+00:00"
+ },
+ {
+  "_id": "6ae21f5a2de2e524058c0768",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-10-28T16:14:18.666563+00:00"
+ },
+ {
+  "_id": "6ae21f6b2de2e524058c0769",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:14:35.108386+00:00"
+ },
+ {
+  "_id": "6ae221e02de2e524058c076a",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:25:04.197414+00:00"
+ },
+ {
+  "_id": "6ae221e02de2e524058c076b",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:25:04.438673+00:00"
+ },
+ {
+  "_id": "6ae229b82de2e524058c076c",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:58:32.072257+00:00"
+ },
+ {
+  "_id": "6ae229b82de2e524058c076d",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-28T16:58:32.079651+00:00"
+ },
+ {
+  "_id": "6ae31d32cd374b1583878e5e",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-29T10:17:22.531317+00:00"
+ },
+ {
+  "_id": "6ae31d32cd374b1583878e5f",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-10-29T10:17:22.531712+00:00"
+ },
+ {
+  "_id": "6aeb62d677632467d632c1e7",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T16:52:38.657416+00:00"
+ },
+ {
+  "_id": "6aeb62e077632467d632c1e8",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T16:52:48.104529+00:00"
+ },
+ {
+  "_id": "6aeb62e077632467d632c1e9",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T16:52:48.112160+00:00"
+ },
+ {
+  "_id": "6aeb62e177632467d632c1ea",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-04T16:52:49.042257+00:00"
+ },
+ {
+  "_id": "6aeb633677632467d632c1eb",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-04T16:54:14.450827+00:00"
+ },
+ {
+  "_id": "6aeb633677632467d632c1ec",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-11-04T16:54:14.970191+00:00"
+ },
+ {
+  "_id": "6aeb633777632467d632c1ed",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-11-04T16:54:15.835727+00:00"
+ },
+ {
+  "_id": "6aeb633877632467d632c1ee",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-04T16:54:16.334611+00:00"
+ },
+ {
+  "_id": "6aeb63b80aa663e647690cea",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-04T16:56:24.155964+00:00"
+ },
+ {
+  "_id": "6aeb63b80aa663e647690ceb",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-04T16:56:24.195807+00:00"
+ },
+ {
+  "_id": "6aeb6420fd275497b8867cbb",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T16:58:08.203698+00:00"
+ },
+ {
+  "_id": "6aeb6420fd275497b8867cbc",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T16:58:08.305689+00:00"
+ },
+ {
+  "_id": "6aeb6427fd275497b8867cbd",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-04T16:58:15.305365+00:00"
+ },
+ {
+  "_id": "6aeb6427fd275497b8867cbe",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-04T16:58:15.327325+00:00"
+ },
+ {
+  "_id": "6aeb6437fd275497b8867cbf",
+  "event": "pageview",
+  "path": "/percorsi/pausa-benessere",
+  "ts": "2026-11-04T16:58:31.606128+00:00"
+ },
+ {
+  "_id": "6aeb6437fd275497b8867cc0",
+  "event": "pageview",
+  "path": "/percorsi/pausa-benessere",
+  "ts": "2026-11-04T16:58:31.607060+00:00"
+ },
+ {
+  "_id": "6aeb68a8fd275497b8867cc1",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:17:28.551188+00:00"
+ },
+ {
+  "_id": "6aeb68c3fd275497b8867cc2",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:17:55.648539+00:00"
+ },
+ {
+  "_id": "6aeb68dafd275497b8867cc3",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:18.566766+00:00"
+ },
+ {
+  "_id": "6aeb68dbfd275497b8867cc4",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:19.603973+00:00"
+ },
+ {
+  "_id": "6aeb68dbfd275497b8867cc5",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:19.641006+00:00"
+ },
+ {
+  "_id": "6aeb68dcfd275497b8867cc6",
+  "event": "quiz_start",
+  "path": "/",
+  "ts": "2026-11-04T17:18:20.199637+00:00"
+ },
+ {
+  "_id": "6aeb68e4fd275497b8867cc7",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:28.867915+00:00"
+ },
+ {
+  "_id": "6aeb68e4fd275497b8867cc8",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:28.868589+00:00"
+ },
+ {
+  "_id": "6aeb68fefd275497b8867cc9",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:54.433684+00:00"
+ },
+ {
+  "_id": "6aeb68fefd275497b8867cca",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:18:54.509656+00:00"
+ },
+ {
+  "_id": "6aeb690bfd275497b8867ccb",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-04T17:19:07.937523+00:00"
+ },
+ {
+  "_id": "6aeb6910fd275497b8867ccc",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:19:12.413799+00:00"
+ },
+ {
+  "_id": "6aeb6953fd275497b8867ccd",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-04T17:20:19.715110+00:00"
+ },
+ {
+  "_id": "6aeb6955fd275497b8867cce",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:20:21.960762+00:00"
+ },
+ {
+  "_id": "6aeb6975fd275497b8867ccf",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:20:53.706023+00:00"
+ },
+ {
+  "_id": "6aeb6975fd275497b8867cd0",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:20:53.706304+00:00"
+ },
+ {
+  "_id": "6aeb6ab3fd275497b8867cd1",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:26:11.232387+00:00"
+ },
+ {
+  "_id": "6aeb6ab3fd275497b8867cd2",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:26:11.241942+00:00"
+ },
+ {
+  "_id": "6aeb6af1c42b363e1f580add",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:27:13.871220+00:00"
+ },
+ {
+  "_id": "6aeb6b5cc42b363e1f580adf",
+  "event": "pageview",
+  "path": "/evento-natale",
+  "ts": "2026-11-04T17:29:00.105893+00:00"
+ },
+ {
+  "_id": "6aeb6b5cc42b363e1f580ae0",
+  "event": "pageview",
+  "path": "/evento-natale",
+  "ts": "2026-11-04T17:29:00.135788+00:00"
+ },
+ {
+  "_id": "6aeb6b72c42b363e1f580ae2",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:29:22.307208+00:00"
+ },
+ {
+  "_id": "6aeb6b72c42b363e1f580ae3",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T17:29:22.348871+00:00"
+ },
+ {
+  "_id": "6aeb7dafc42b363e1f580ae4",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T18:47:11.103605+00:00"
+ },
+ {
+  "_id": "6aeb7dafc42b363e1f580ae5",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-04T18:47:11.205434+00:00"
+ },
+ {
+  "_id": "6aec63fd56a84adb4fbfcaf0",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:09:49.369474+00:00"
+ },
+ {
+  "_id": "6aec63fd56a84adb4fbfcaf1",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:09:49.372801+00:00"
+ },
+ {
+  "_id": "6aec68b556a84adb4fbfcaf2",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:29:57.861787+00:00"
+ },
+ {
+  "_id": "6aec68bc56a84adb4fbfcaf3",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:30:04.102088+00:00"
+ },
+ {
+  "_id": "6aec68bc56a84adb4fbfcaf4",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:30:04.165201+00:00"
+ },
+ {
+  "_id": "6aec68c656a84adb4fbfcaf5",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:30:14.982998+00:00"
+ },
+ {
+  "_id": "6aec68c656a84adb4fbfcaf6",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:30:14.986531+00:00"
+ },
+ {
+  "_id": "6aec6a3e56a84adb4fbfcaf7",
+  "event": "pageview",
+  "path": "/buoni-regalo",
+  "ts": "2026-11-05T11:36:30.012044+00:00"
+ },
+ {
+  "_id": "6aec6a4256a84adb4fbfcaf8",
+  "event": "fresha_click",
+  "path": "/buoni-regalo",
+  "ts": "2026-11-05T11:36:34.305382+00:00"
+ },
+ {
+  "_id": "6aec6a5156a84adb4fbfcaf9",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-05T11:36:49.375807+00:00"
+ },
+ {
+  "_id": "6aec6aac56a84adb4fbfcafa",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-05T11:38:20.262957+00:00"
+ },
+ {
+  "_id": "6aec6ad456a84adb4fbfcafb",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-11-05T11:39:00.755012+00:00"
+ },
+ {
+  "_id": "6aec6ae156a84adb4fbfcafc",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-11-05T11:39:13.555551+00:00"
+ },
+ {
+  "_id": "6aec6af156a84adb4fbfcafd",
+  "event": "pageview",
+  "path": "/percorsi/mani-e-piedi",
+  "ts": "2026-11-05T11:39:29.077668+00:00"
+ },
+ {
+  "_id": "6aec6b70b225bb35c9159ac1",
+  "event": "pageview",
+  "path": "/faq",
+  "ts": "2026-11-05T11:41:36.625751+00:00"
+ },
+ {
+  "_id": "6aec6b71b225bb35c9159ac2",
+  "event": "pageview",
+  "path": "/faq",
+  "ts": "2026-11-05T11:41:37.087210+00:00"
+ },
+ {
+  "_id": "6aec6b78b225bb35c9159ac3",
+  "event": "pageview",
+  "path": "/note-legali",
+  "ts": "2026-11-05T11:41:44.669079+00:00"
+ },
+ {
+  "_id": "6aec6b78b225bb35c9159ac4",
+  "event": "pageview",
+  "path": "/note-legali",
+  "ts": "2026-11-05T11:41:44.688621+00:00"
+ },
+ {
+  "_id": "6aec6b8bb225bb35c9159ac5",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:42:03.070147+00:00"
+ },
+ {
+  "_id": "6aec6b8bb225bb35c9159ac6",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:42:03.075677+00:00"
+ },
+ {
+  "_id": "6aec6be5b225bb35c9159ac7",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:33.075177+00:00"
+ },
+ {
+  "_id": "6aec6be9b225bb35c9159ac8",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:37.176702+00:00"
+ },
+ {
+  "_id": "6aec6be9b225bb35c9159ac9",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:37.188625+00:00"
+ },
+ {
+  "_id": "6aec6beeb225bb35c9159aca",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:42.788699+00:00"
+ },
+ {
+  "_id": "6aec6beeb225bb35c9159acb",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:42.791651+00:00"
+ },
+ {
+  "_id": "6aec6bf6b225bb35c9159acc",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:50.089782+00:00"
+ },
+ {
+  "_id": "6aec6bf6b225bb35c9159acd",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:43:50.110362+00:00"
+ },
+ {
+  "_id": "6aec6c1db225bb35c9159ace",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-11-05T11:44:29.542699+00:00"
+ },
+ {
+  "_id": "6aec6c1fb225bb35c9159acf",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-11-05T11:44:31.720357+00:00"
+ },
+ {
+  "_id": "6aec6c21b225bb35c9159ad0",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-11-05T11:44:33.681976+00:00"
+ },
+ {
+  "_id": "6aec6c2cb225bb35c9159ad1",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-05T11:44:44.437355+00:00"
+ },
+ {
+  "_id": "6aec6c9cb225bb35c9159ad2",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T11:46:36.039909+00:00"
+ },
+ {
+  "_id": "6aec6cdcb225bb35c9159ad3",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:47:40.819265+00:00"
+ },
+ {
+  "_id": "6aec6ce5b225bb35c9159ad4",
+  "event": "pageview",
+  "path": "/evento-natale",
+  "ts": "2026-11-05T11:47:49.812275+00:00"
+ },
+ {
+  "_id": "6aec6d4388838b4481124c05",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:49:23.969837+00:00"
+ },
+ {
+  "_id": "6aec6d4388838b4481124c06",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T11:49:23.972826+00:00"
+ },
+ {
+  "_id": "6aec6d4b88838b4481124c07",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-05T11:49:31.635972+00:00"
+ },
+ {
+  "_id": "6aec6d6d88838b4481124c08",
+  "event": "pageview",
+  "path": "/evento-natale",
+  "ts": "2026-11-05T11:50:05.575380+00:00"
+ },
+ {
+  "_id": "6aec6d6d88838b4481124c09",
+  "event": "pageview",
+  "path": "/evento-natale",
+  "ts": "2026-11-05T11:50:05.576150+00:00"
+ },
+ {
+  "_id": "6aec6d6f88838b4481124c0a",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T11:50:07.469123+00:00"
+ },
+ {
+  "_id": "6aec6d6f88838b4481124c0b",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T11:50:07.471323+00:00"
+ },
+ {
+  "_id": "6aec6d9088838b4481124c0c",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T11:50:40.477129+00:00"
+ },
+ {
+  "_id": "6aec6e6888838b4481124c0d",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T11:54:16.635186+00:00"
+ },
+ {
+  "_id": "6aec6e6888838b4481124c0e",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T11:54:16.669176+00:00"
+ },
+ {
+  "_id": "6aec6e6f88838b4481124c0f",
+  "event": "pageview",
+  "path": "/link",
+  "ts": "2026-11-05T11:54:23.971343+00:00"
+ },
+ {
+  "_id": "6aec6e7088838b4481124c10",
+  "event": "pageview",
+  "path": "/link",
+  "ts": "2026-11-05T11:54:24.071450+00:00"
+ },
+ {
+  "_id": "6aec80ce88838b4481124c11",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:12:46.044752+00:00"
+ },
+ {
+  "_id": "6aec80de88838b4481124c12",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:13:02.722657+00:00"
+ },
+ {
+  "_id": "6aec80de88838b4481124c13",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:13:02.798282+00:00"
+ },
+ {
+  "_id": "6aec843488838b4481124c14",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T13:27:16.550144+00:00"
+ },
+ {
+  "_id": "6aec843488838b4481124c15",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T13:27:16.617433+00:00"
+ },
+ {
+  "_id": "6aec843a88838b4481124c16",
+  "event": "pageview",
+  "path": "/corpo",
+  "ts": "2026-11-05T13:27:22.763480+00:00"
+ },
+ {
+  "_id": "6aec843c88838b4481124c17",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:27:24.975492+00:00"
+ },
+ {
+  "_id": "6aec844b88838b4481124c18",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-11-05T13:27:39.543199+00:00"
+ },
+ {
+  "_id": "6aec845688838b4481124c19",
+  "event": "pageview",
+  "path": "/percorsi/pelle-pulita",
+  "ts": "2026-11-05T13:27:50.596472+00:00"
+ },
+ {
+  "_id": "6aec846a88838b4481124c1a",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-11-05T13:28:10.713767+00:00"
+ },
+ {
+  "_id": "6aec84fd88838b4481124c1b",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:30:37.732887+00:00"
+ },
+ {
+  "_id": "6aec84fe88838b4481124c1c",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:30:38.588726+00:00"
+ },
+ {
+  "_id": "6aec84ff88838b4481124c1d",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:30:39.849423+00:00"
+ },
+ {
+  "_id": "6aec84ff88838b4481124c1e",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:30:39.863727+00:00"
+ },
+ {
+  "_id": "6aec8928139dc269bfd94fb6",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:48:24.912631+00:00"
+ },
+ {
+  "_id": "6aec8954139dc269bfd94fb7",
+  "event": "pageview",
+  "path": "/evento-natale",
+  "ts": "2026-11-05T13:49:08.992197+00:00"
+ },
+ {
+  "_id": "6aec8957139dc269bfd94fb8",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:49:11.859045+00:00"
+ },
+ {
+  "_id": "6aec8972139dc269bfd94fb9",
+  "event": "pageview",
+  "path": "/faq",
+  "ts": "2026-11-05T13:49:38.433655+00:00"
+ },
+ {
+  "_id": "6aec8978139dc269bfd94fba",
+  "event": "pageview",
+  "path": "/viso",
+  "ts": "2026-11-05T13:49:44.733524+00:00"
+ },
+ {
+  "_id": "6aec897e139dc269bfd94fbb",
+  "event": "pageview",
+  "path": "/susana",
+  "ts": "2026-11-05T13:49:50.966829+00:00"
+ },
+ {
+  "_id": "6aec8988139dc269bfd94fbc",
+  "event": "pageview",
+  "path": "/servizi",
+  "ts": "2026-11-05T13:50:00.112650+00:00"
+ },
+ {
+  "_id": "6aec898e139dc269bfd94fbd",
+  "event": "pageview",
+  "path": "/buoni-regalo",
+  "ts": "2026-11-05T13:50:06.070651+00:00"
+ },
+ {
+  "_id": "6aec898e139dc269bfd94fbe",
+  "event": "pageview",
+  "path": "/contatti",
+  "ts": "2026-11-05T13:50:06.876322+00:00"
+ },
+ {
+  "_id": "6aec8994139dc269bfd94fbf",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T13:50:12.381144+00:00"
+ },
+ {
+  "_id": "6aec8997139dc269bfd94fc0",
+  "event": "quiz_start",
+  "path": "/",
+  "ts": "2026-11-05T13:50:15.848539+00:00"
+ },
+ {
+  "_id": "6aec8a2a139dc269bfd94fc1",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-11-05T13:52:42.470861+00:00"
+ },
+ {
+  "_id": "6aec9045139dc269bfd94fc2",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T14:18:45.768439+00:00"
+ },
+ {
+  "_id": "6aec9045139dc269bfd94fc3",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-05T14:18:45.868493+00:00"
+ },
+ {
+  "_id": "6af1ad11783609a488c9bb1d",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:22:57.884926+00:00"
+ },
+ {
+  "_id": "6af1ad13783609a488c9bb1e",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:22:59.522834+00:00"
+ },
+ {
+  "_id": "6af1ad13783609a488c9bb1f",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:22:59.564943+00:00"
+ },
+ {
+  "_id": "6af1ad22783609a488c9bb20",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:23:14.266495+00:00"
+ },
+ {
+  "_id": "6af1ad22783609a488c9bb21",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:23:14.289112+00:00"
+ },
+ {
+  "_id": "6af1aed3783609a488c9bb22",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:30:27.613519+00:00"
+ },
+ {
+  "_id": "6af1aed3783609a488c9bb23",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:30:27.618790+00:00"
+ },
+ {
+  "_id": "6af1af20783609a488c9bb24",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:31:44.799850+00:00"
+ },
+ {
+  "_id": "6af1af21783609a488c9bb25",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:31:45.526807+00:00"
+ },
+ {
+  "_id": "6af1af21783609a488c9bb26",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:31:45.535834+00:00"
+ },
+ {
+  "_id": "6af1af9d783609a488c9bb27",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:33:49.007883+00:00"
+ },
+ {
+  "_id": "6af1af9d783609a488c9bb28",
+  "event": "pageview",
+  "path": "/",
+  "ts": "2026-11-09T11:33:49.009337+00:00"
+ },
+ {
+  "_id": "6af1afab783609a488c9bb29",
+  "event": "pageview",
+  "path": "/percorsi",
+  "ts": "2026-11-09T11:34:03.754137+00:00"
+ }
+]

@@ -1,0 +1,18 @@
+[
+ {
+  "_id": "site",
+  "shop_prodotti_attivo": false,
+  "formazione_attiva": false,
+  "open_day_attivo": true,
+  "pagamento_rate_attivo": false,
+  "banner_buoni_regalo_attivo": true,
+  "sconto_quiz_attivo": true,
+  "rme_valido": true,
+  "whatsapp_number": "417964944005",
+  "fresha_url": "https://www.fresha.com/it/a/estetica-beauty-and-care-losone-via-locarno-58-jwl8ceyb/booking",
+  "fresha_consulenza_url": "",
+  "fresha_buoni_url": "",
+  "telefono": "+41 79 649 40 05",
+  "email": "esteticabeautycare@hotmail.ch"
+ }
+]

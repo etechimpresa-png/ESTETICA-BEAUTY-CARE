@@ -82,6 +82,12 @@
 - Legali complete: Privacy (nLPD/GDPR, quiz, eventi, Fresha, WhatsApp, statistiche interne), Condizioni, Cookie (nessun cookie terze parti, stats interne), Note legali con IVA CHE-181.789.225, ragione sociale "Estetica Beauty & Care di Susana Cabezas Agostino".
 - CORREZIONE: telefono unico +41 79 649 40 05 (uguale a WhatsApp); rimosso il fisso 091 730 10 77 da impostazioni, FAQ e legali.
 - Restano aperti: foto ingresso negozio, password admin definitiva, pubblicazione + dominio esteticabeautycare.com, trasferimento account alla cliente dopo il deploy.
+
+## Migrazione all'account della cliente (05.11.2026)
+- Deploy effettuato: produzione https://care-losone.emergent.host (account utente, in attesa di migrazione).
+- Supporto Emergent: trasferimento diretto NON disponibile → percorso GitHub (Save to GitHub → import su account esteticabeautycare@hotmail.ch → reinserire JWT_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD → import DB → redeploy).
+- Preparato: /app/scripts/db_export/*.json (quiz_leads 5, event_rsvps 2, settings, stats_events) + /app/scripts/import_data.py (inserisce solo se collezione vuota, nessuna cancellazione). I file viaggiano con l'export GitHub.
+- Da fare dopo migrazione: spegnere il deployment sull'account utente (per non pagare due volte), puntare il dominio al nuovo deployment.
 - Pulizia finale: rimossi TUTTI i segnaposto "[DA INSERIRE]" dal sito (richiesta utente). Descrizioni tecnologie sostituite con testi generici senza promesse mediche; slot foto ingresso e box video rimossi del tutto. Footer: barra legale in basso con IVA CHE-181.789.225. Ricerca globale con lente nel menu (risultati → /servizi?q=).
 
 ## Backlog prioritizzato

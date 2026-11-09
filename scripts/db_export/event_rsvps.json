@@ -1,0 +1,22 @@
+[
+ {
+  "_id": "6aeb6b0ec42b363e1f580ade",
+  "nome": "Test Anna",
+  "telefono": "+41790001122",
+  "persone": 2,
+  "messaggio": "Porto una amica",
+  "consenso": true,
+  "evento": "christmas-gift-experience-2026",
+  "created_at": "2026-11-04T17:27:42.038764+00:00"
+ },
+ {
+  "_id": "6aeb6b62c42b363e1f580ae1",
+  "nome": "Laura Test",
+  "telefono": "+41791112233",
+  "persone": 2,
+  "messaggio": null,
+  "consenso": true,
+  "evento": "christmas-gift-experience-2026",
+  "created_at": "2026-11-04T17:29:06.187278+00:00"
+ }
+]
